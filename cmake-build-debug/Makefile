@@ -150,6 +150,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/proi_project_3.dir/build.make CMakeFiles/proi_project_3.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+wincomponents.o: wincomponents.cpp.o
+
+.PHONY : wincomponents.o
+
+# target to build an object file
+wincomponents.cpp.o:
+	$(MAKE) -f CMakeFiles/proi_project_3.dir/build.make CMakeFiles/proi_project_3.dir/wincomponents.cpp.o
+.PHONY : wincomponents.cpp.o
+
+wincomponents.i: wincomponents.cpp.i
+
+.PHONY : wincomponents.i
+
+# target to preprocess a source file
+wincomponents.cpp.i:
+	$(MAKE) -f CMakeFiles/proi_project_3.dir/build.make CMakeFiles/proi_project_3.dir/wincomponents.cpp.i
+.PHONY : wincomponents.cpp.i
+
+wincomponents.s: wincomponents.cpp.s
+
+.PHONY : wincomponents.s
+
+# target to generate assembly for a file
+wincomponents.cpp.s:
+	$(MAKE) -f CMakeFiles/proi_project_3.dir/build.make CMakeFiles/proi_project_3.dir/wincomponents.cpp.s
+.PHONY : wincomponents.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,6 +189,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... wincomponents.o"
+	@echo "... wincomponents.i"
+	@echo "... wincomponents.s"
 .PHONY : help
 
 
