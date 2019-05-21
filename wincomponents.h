@@ -34,9 +34,11 @@ public:
     void setPosition(int x, int y);
     void setDimensions(int w, int h);
 
+    virtual char** getDisplayArray() = 0;
+
     friend Component* newComponent(int componentType);
     friend void deleteComponent(Component* comp);
-    friend bool isContained(Component parent, Component child);
+    friend bool isContained(Component* parent, Component* child);
 
 };
 
@@ -47,6 +49,8 @@ public:
     TitleComp();
     TitleComp(std::string &title, int x, int y, int w, int h);
 
+    char** getDisplayArray() override;
+
 };
 
 class SignComp: public Component{
@@ -54,6 +58,8 @@ public:
     char sign;
     SignComp();
     SignComp(char sign, int x, int y, int w, int h);
+
+    char** getDisplayArray() override;
 };
 
 #endif //PROI_PROJECT_3_WINCOMPONENTS_H

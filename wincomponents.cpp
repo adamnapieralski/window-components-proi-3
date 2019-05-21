@@ -53,28 +53,23 @@ int Component::newChildId() {
         }
     }
 }
-bool isContained(Component parent, Component child){
-    if(child.x > parent.x + parent.w || child.x < parent.x)
-        return false;
-    if(child.y > parent.y + parent.h || child.y < parent.y)
-        return false;
-    if(child.x + child.w > parent.x + parent.w)
-        return false;
-    if(child.y + child.h > parent.y + parent.h)
-        return false;
-    return true;
+
+bool isContained(Component* parent, Component* child){
+    if(child->x >= 0 && child->x + child->w <= parent->x && child->y >= 0 && child->y + child->h <= parent->y)
+        return true;
+    return false;
 }
 
 void Component::addChildComp(Component* child) {
 
-    if(isContained(*this, *child)){
+    if(isContained(this, child)){
         //set smallest id to set to child
         child->id = this->id;
         child->id.push_back(this->newChildId());
         this->children.push_back(child);
     }
     else{
-        throw std::out_of_range;
+        std::cout << "temp error" << std::endl;
     }
 
 }
@@ -93,6 +88,12 @@ TitleComp::TitleComp(std::string &title, int x, int y, int w, int h) {
     this->w = w;
     this->h = h;
     this->title = title;
+}
+
+char** TitleComp::getDisplayArray() {
+    for(auto &child : this->children){
+        child->getDisplayArray();
+    }
 }
 
 SignComp::SignComp() {
