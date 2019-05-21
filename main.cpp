@@ -9,7 +9,11 @@ int main() {
     Component c2(6, 11, 2, 8);
     c1.addChildComp(&c2);
 
-    auto mainComponent = new Component(0, 0, 1080, 720);
+    auto mainComponent = new SignComp('.', 0, 0, 1080, 720);
+    for(int i = 0; i < mainComponent->id.size(); ++i){
+        cout << mainComponent->id[i] << endl;
+    }
 
+//    cout << mainComponent->id.size();
     return 0;
 }

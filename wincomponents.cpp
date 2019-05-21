@@ -18,8 +18,19 @@ Component::Component(int x, int y, int w, int h) {
     this->y = y;
     this->w = w;
     this->h = h;
+    this->id.push_back(0);
+
 }
 
+void Component::setPosition(int x, int y) {
+    this->x = x;
+    this->y = y;
+}
+
+void Component::setDimensions(int w, int h) {
+    this->w = w;
+    this->h = h;
+}
 int Component::newChildId() {
     //find smallest id to set to the child
     std::deque <int> lastIds;
@@ -42,12 +53,30 @@ int Component::newChildId() {
         }
     }
 }
+bool isContained(Component parent, Component child){
+    if(child.x > parent.x + parent.w || child.x < parent.x)
+        return false;
+    if(child.y > parent.y + parent.h || child.y < parent.y)
+        return false;
+    if(child.x + child.w > parent.x + parent.w)
+        return false;
+    if(child.y + child.h > parent.y + parent.h)
+        return false;
+    return true;
+}
 
 void Component::addChildComp(Component* child) {
-    //set smallest id to set to child
-    child->id = this->id;
-    child->id.push_back(this->newChildId());
-    this->children.push_back(child);
+
+    if(isContained(*this, *child)){
+        //set smallest id to set to child
+        child->id = this->id;
+        child->id.push_back(this->newChildId());
+        this->children.push_back(child);
+    }
+    else{
+        throw std::out_of_range;
+    }
+
 }
 
 TitleComp::TitleComp() {
@@ -55,16 +84,15 @@ TitleComp::TitleComp() {
     this->y = 0;
     this->w = 0;
     this->h = 0;
-    this->id.push_back(0);
     this->title = "";
 }
 
 TitleComp::TitleComp(std::string &title, int x, int y, int w, int h) {
-    this->title = title;
     this->x = x;
     this->y = y;
     this->w = w;
     this->h = h;
+    this->title = title;
 }
 
 SignComp::SignComp() {
@@ -72,23 +100,40 @@ SignComp::SignComp() {
     this->y = 0;
     this->w = 0;
     this->h = 0;
-    this->id.push_back(0);
     this->sign = '\0';
 }
 
 SignComp::SignComp(char sign, int x, int y, int w, int h) {
-    this->sign = sign;
     this->x = x;
     this->y = y;
     this->w = w;
     this->h = h;
+    this->sign = sign;
+
 }
 
-//Component* newComponent(int componentType) {
-//    switch(componentType){
-//        case 0:
-//            return new TitleComp();
-//        case 1:
-//            return new SignComp();
-//    }
-//}
+Component* newComponent(int componentType) {
+    switch(componentType){
+        case 0:
+            return new TitleComp();
+        case 1:
+            return new SignComp();
+    }
+}
+
+void deleteComponent(Component* comp){
+    if(!comp->children.empty()){
+        //for(auto child = comp->children.begin(); child != comp->children.end(); child++){
+        for(auto &child : comp->children){
+            deleteComponent(child);
+        }
+    }
+    else{
+        //find iterator to the comp pointer in parent's children vector
+        auto eraseComp = std::find(comp->parent->children.begin(), comp->parent->children.end(), comp);
+        //erase it from parent's children vector
+        comp->parent->children.erase(eraseComp);
+        //finally delete
+        delete comp;
+    }
+}
