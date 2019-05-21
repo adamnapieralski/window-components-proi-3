@@ -18,19 +18,19 @@ enum componentTypes {
 
 class Component{
 public:
-    std::deque <unsigned int> id; //id of a component
-    unsigned int x, y;  //position of window's rectangle upper left corner in global coord sys
-    unsigned int w, h;  //dimensions: width and height
+    std::deque <int> id; //id of a component
+    int x, y;  //position of window's rectangle upper left corner in global coord sys
+    int w, h;  //dimensions: width and height
 
     std::vector <Component*> children;   //components contained in this component
 
     Component();
-    Component(unsigned int x, unsigned int y, unsigned int w, unsigned int h);
+    Component(int x, int y, int w, int h);
 
     void addChildComp(Component* child);
     int newChildId();
 
-    friend Component* newComponent(int componentType);
+//    friend Component* newComponent(int componentType);
 
 };
 
@@ -39,12 +39,15 @@ public:
     std::string title;
 
     TitleComp();
+    TitleComp(std::string &title, int x, int y, int w, int h);
+
 };
 
 class SignComp: public Component{
 public:
     char sign;
     SignComp();
+    SignComp(char sign, int x, int y, int w, int h);
 };
 
 #endif //PROI_PROJECT_3_WINCOMPONENTS_H

@@ -1,5 +1,8 @@
 #include <iostream>
 #include "wincomponents.h"
+#include <deque>
+
+using namespace std;
 
 int main() {
     Component c1(5, 10, 5, 10);
@@ -7,7 +10,6 @@ int main() {
     c1.addChildComp(&c2);
 
     auto mainComponent = new Component(0, 0, 1080, 720);
-
 
     return 0;
 }
