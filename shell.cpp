@@ -22,6 +22,19 @@ Component::componentTypes Shell::getComponentType() {
         case 1: return Component::sign;
     }
 }
+
+void Shell::showMainMenu() {
+    cout << "MAIN MENU\n\n";
+    cout << "0 - " << "Wypisz strukture komponentow\n";
+    cout << "1 - " << "Przedstaw graficznie komponenty\n";
+    cout << "2 - " << "Dodaj komponent\n";
+    cout << "3 - " << "Usun komponent\n";
+    cout << "4 - " << "Pokaz szczegoly komponentu\n";
+}
+
+void Shell::showComponentsStructure() {
+
+}
 void Shell::setRootComponent() {
 
 }

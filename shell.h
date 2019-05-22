@@ -13,6 +13,8 @@ public:
 
     void setRootComponent();
     Component::componentTypes getComponentType();
+    void showMainMenu();
+    void showComponentsStructure();
 
 };
 

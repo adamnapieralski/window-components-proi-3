@@ -4,6 +4,10 @@
 CMakeFiles/proi_project_3.dir/main.cpp.o: ../main.cpp
 CMakeFiles/proi_project_3.dir/main.cpp.o: ../wincomponents.h
 
+CMakeFiles/proi_project_3.dir/shell.cpp.o: ../shell.cpp
+CMakeFiles/proi_project_3.dir/shell.cpp.o: ../shell.h
+CMakeFiles/proi_project_3.dir/shell.cpp.o: ../wincomponents.h
+
 CMakeFiles/proi_project_3.dir/wincomponents.cpp.o: ../wincomponents.cpp
 CMakeFiles/proi_project_3.dir/wincomponents.cpp.o: ../wincomponents.h
 
