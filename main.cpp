@@ -1,6 +1,8 @@
 #include <iostream>
-#include "wincomponents.h"
 #include <deque>
+
+#include "wincomponents.h"
+#include "shell.h"
 
 using namespace std;
 
@@ -12,12 +14,13 @@ enum componentTypes2 {
 
 int main() {
     auto t1 = new TitleComp("xyz", 0, 0, 12, 6);
+    cout << t1->id.size() << endl;
     auto t2 = new TitleComp(".", 2, 2, 6, 3);
     auto t3 = new TitleComp("|", 1, 1, 4, 1);
     auto t4 = new TitleComp("-", 6, 0, 5, 4);
-    t2->addChildComp(t3);
     t1->addChildComp(t2);
     t1->addChildComp(t4);
+    t2->addChildComp(t3);
 
 
     char** tablica = t1->getDisplayArray();
@@ -29,6 +32,9 @@ int main() {
         cout << endl;
     }
     delete[] tablica;
+
+    Shell shell;
+    shell.showComponentsStructure(t1);
     delete t1;
     delete t2;
     delete t3;

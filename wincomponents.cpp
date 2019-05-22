@@ -44,6 +44,9 @@ int Component::newChildId() {
 
     std::sort(lastIds.begin(), lastIds.end());
 
+    if(maxId + 1 == lastIds.size())
+        return maxId + 1;
+
     for(int i = 0; i < maxId; ++i){
         if(i >= lastIds.size()){
             return maxId + 1;
@@ -100,6 +103,7 @@ TitleComp::TitleComp() {
     this->w = 0;
     this->h = 0;
     this->title = "";
+    this->id.push_back(0);
 }
 
 TitleComp::TitleComp(std::string title, int x, int y, int w, int h) {
@@ -108,6 +112,7 @@ TitleComp::TitleComp(std::string title, int x, int y, int w, int h) {
     this->w = w;
     this->h = h;
     this->title = title;
+    this->id.push_back(0);
 }
 
 void TitleComp::fillDisplayArray(char*** dispArr) {
@@ -177,6 +182,7 @@ SignComp::SignComp() {
     this->w = 0;
     this->h = 0;
     this->sign = '\0';
+    this->id.push_back(0);
 }
 
 SignComp::SignComp(char &sign, int x, int y, int w, int h) {
@@ -185,6 +191,7 @@ SignComp::SignComp(char &sign, int x, int y, int w, int h) {
     this->w = w;
     this->h = h;
     this->sign = sign;
+    this->id.push_back(0);
 
 }
 

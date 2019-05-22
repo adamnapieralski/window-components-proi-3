@@ -32,8 +32,22 @@ void Shell::showMainMenu() {
     cout << "4 - " << "Pokaz szczegoly komponentu\n";
 }
 
-void Shell::showComponentsStructure() {
+void Shell::printId(Component* component) {
+    for(int i = 0; i < component->id.size(); ++i){
+        cout << component->id[i];
+        if(i < component->id.size() - 1)
+            cout << ".";
+    }
+}
 
+void Shell::showComponentsStructure(Component* component, int depth) {
+    for(int i = 0; i < depth; ++i)
+        cout << "\t";
+    printId(component);
+    cout << endl;
+    ++depth;
+    for(auto child : component->children)
+        showComponentsStructure(child, depth);
 }
 void Shell::setRootComponent() {
 

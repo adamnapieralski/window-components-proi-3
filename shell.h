@@ -6,6 +6,7 @@
 #define PROI_PROJECT_3_SHELL_H
 
 #include "wincomponents.h"
+#include <deque>
 
 class Shell{
 public:
@@ -14,7 +15,10 @@ public:
     void setRootComponent();
     Component::componentTypes getComponentType();
     void showMainMenu();
-    void showComponentsStructure();
+    void showComponentsStructure(Component* component, int depth = 0);
+
+
+    void printId(Component* component);
 
 };
 
