@@ -25,8 +25,8 @@ public:
     std::vector <Component*> children;   //pointers to components contained in this component
     Component* parent;  //pointer to parent of this component
 
-    Component();
-    Component(int x, int y, int w, int h);
+//    Component();
+//    Component(int x, int y, int w, int h);
 
     void addChildComp(Component* child);
     int newChildId();
@@ -34,12 +34,12 @@ public:
     void setPosition(int x, int y);
     void setDimensions(int w, int h);
 
+    bool isContained(Component* child);
     virtual char** getDisplayArray() = 0;
+    virtual void fillDisplayArray(char*** dispArr) = 0;
 
     friend Component* newComponent(int componentType);
     friend void deleteComponent(Component* comp);
-    friend bool isContained(Component* parent, Component* child);
-
 };
 
 class TitleComp: public Component{
@@ -47,9 +47,10 @@ public:
     std::string title;
 
     TitleComp();
-    TitleComp(std::string &title, int x, int y, int w, int h);
+    TitleComp(std::string title, int x, int y, int w, int h);
 
     char** getDisplayArray() override;
+    void fillDisplayArray(char*** dispArr) override;
 
 };
 
@@ -57,9 +58,11 @@ class SignComp: public Component{
 public:
     char sign;
     SignComp();
-    SignComp(char sign, int x, int y, int w, int h);
+    SignComp(char &sign, int x, int y, int w, int h);
 
     char** getDisplayArray() override;
+    void fillDisplayArray(char*** dispArr) override;
+
 };
 
 #endif //PROI_PROJECT_3_WINCOMPONENTS_H

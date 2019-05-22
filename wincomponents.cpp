@@ -5,22 +5,22 @@
 #include "wincomponents.h"
 
 
-Component::Component() {
-    this->x = 0;
-    this->y = 0;
-    this->w = 0;
-    this->h = 0;
-    this->id.push_back(0);
-}
-
-Component::Component(int x, int y, int w, int h) {
-    this->x = x;
-    this->y = y;
-    this->w = w;
-    this->h = h;
-    this->id.push_back(0);
-
-}
+//Component::Component() {
+//    this->x = 0;
+//    this->y = 0;
+//    this->w = 0;
+//    this->h = 0;
+//    this->id.push_back(0);
+//}
+//
+//Component::Component(int x, int y, int w, int h) {
+//    this->x = x;
+//    this->y = y;
+//    this->w = w;
+//    this->h = h;
+//    this->id.push_back(0);
+//
+//}
 
 void Component::setPosition(int x, int y) {
     this->x = x;
@@ -54,15 +54,17 @@ int Component::newChildId() {
     }
 }
 
-bool isContained(Component* parent, Component* child){
-    if(child->x >= 0 && child->x + child->w <= parent->x && child->y >= 0 && child->y + child->h <= parent->y)
+
+bool Component::isContained(Component *child) {
+    if((child->x >= 0) && (child->x + child->w <= this->w) && (child->y >= 0) && (child->y + child->h <= this->h))
         return true;
-    return false;
+    else
+        return false;
 }
 
 void Component::addChildComp(Component* child) {
 
-    if(isContained(this, child)){
+    if(this->isContained(child)){
         //set smallest id to set to child
         child->id = this->id;
         child->id.push_back(this->newChildId());
@@ -82,7 +84,7 @@ TitleComp::TitleComp() {
     this->title = "";
 }
 
-TitleComp::TitleComp(std::string &title, int x, int y, int w, int h) {
+TitleComp::TitleComp(std::string title, int x, int y, int w, int h) {
     this->x = x;
     this->y = y;
     this->w = w;
@@ -90,7 +92,57 @@ TitleComp::TitleComp(std::string &title, int x, int y, int w, int h) {
     this->title = title;
 }
 
+void TitleComp::fillDisplayArray(char*** dispArr) {
+    //fill with current component
+    for(int i = 0; i < this->h; ++i){
+        int titleIter = 0;
+        for(int j = 0; j < this->w; ++j){
+            if(titleIter >= this->title.size()) titleIter = 0;
+            *dispArr[i][j] = this->title[titleIter];
+            ++titleIter;
+        }
+    }
+
+    for(auto child : this->children){
+        //create array of pointers for child to fill
+        char*** childDispArray = new char**[child->h];
+        for(int i = 0; i < child->h; ++i){
+            childDispArray[i] = new char*[child->w];
+            for(int j = 0; j < child->w; ++j){
+                childDispArray[i][j] = dispArr[child->y + i][child->x + j];
+            }
+        }
+        child->fillDisplayArray(childDispArray);
+    }
+    for(int i = 0; i < this->h; ++i){
+        delete[] dispArr[i];
+    }
+    delete[] dispArr;
+}
+
 char** TitleComp::getDisplayArray() {
+    char** displayArray = new char*[this->h];
+    char*** ptsDisplayArray = new char**[this->h];
+
+    for(int i = 0; i < this->h; ++i){
+        displayArray[i] = new char[this->w];
+        ptsDisplayArray[i] = new char*[this->w];
+        for(int j = 0; j < this->w; ++j){
+            displayArray[i][j] = ' ';
+            ptsDisplayArray[i][j] = &displayArray[i][j];
+        }
+    }
+
+    this->fillDisplayArray(ptsDisplayArray);
+
+    return displayArray;
+}
+
+void SignComp::fillDisplayArray(char*** dispArr) {
+
+}
+
+char** SignComp::getDisplayArray() {
     for(auto &child : this->children){
         child->getDisplayArray();
     }
@@ -104,7 +156,7 @@ SignComp::SignComp() {
     this->sign = '\0';
 }
 
-SignComp::SignComp(char sign, int x, int y, int w, int h) {
+SignComp::SignComp(char &sign, int x, int y, int w, int h) {
     this->x = x;
     this->y = y;
     this->w = w;
