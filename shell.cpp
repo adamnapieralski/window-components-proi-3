@@ -49,6 +49,23 @@ void Shell::showComponentsStructure(Component* component, int depth) {
     for(auto child : component->children)
         showComponentsStructure(child, depth);
 }
+
+void printArray(char** arr, int w, int h){
+    for(int i = 0; i < h; ++i){
+        for(int j = 0; j < w; ++j){
+            cout << arr[i][j];
+        }
+        cout << endl;
+    }
+}
+
+void Shell::showComponentsWindows() {
+    char** displayArray = this->rootComponent->getDisplayArray();
+    printArray(displayArray, this->rootComponent->w, this->rootComponent->h);
+}
+
 void Shell::setRootComponent() {
 
 }
+
+

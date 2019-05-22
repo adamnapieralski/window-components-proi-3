@@ -34,7 +34,9 @@ int main() {
     delete[] tablica;
 
     Shell shell;
+    shell.rootComponent = t1;
     shell.showComponentsStructure(t1);
+    shell.showComponentsWindows();
     delete t1;
     delete t2;
     delete t3;
