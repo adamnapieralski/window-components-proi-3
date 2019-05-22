@@ -87,6 +87,12 @@
 		<Unit filename="/home/napiad/studia/eiti/proi/proi-project-3/main.cpp">
 			<Option target="proi_project_3"/>
 		</Unit>
+		<Unit filename="/home/napiad/studia/eiti/proi/proi-project-3/shell.cpp">
+			<Option target="proi_project_3"/>
+		</Unit>
+		<Unit filename="/home/napiad/studia/eiti/proi/proi-project-3/shell.h">
+			<Option target="proi_project_3"/>
+		</Unit>
 		<Unit filename="/home/napiad/studia/eiti/proi/proi-project-3/wincomponents.cpp">
 			<Option target="proi_project_3"/>
 		</Unit>

@@ -4,6 +4,12 @@
 
 using namespace std;
 
+enum componentTypes2 {
+    title,
+    sign
+};
+
+
 int main() {
     auto t1 = new TitleComp("xyz", 0, 0, 12, 6);
     auto t2 = new TitleComp(".", 2, 2, 6, 3);

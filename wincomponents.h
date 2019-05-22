@@ -11,16 +11,16 @@
 #include <array>
 #include <algorithm>
 
-enum componentTypes {
-        title,
-        sign
-};
-
 class Component{
 public:
     std::deque <int> id; //id of a component
     int x, y;  //position of window's rectangle upper left corner in global coord sys
     int w, h;  //dimensions: width and height
+
+    enum componentTypes {
+        title,
+        sign
+    };
 
     std::vector <Component*> children;   //pointers to components contained in this component
     Component* parent;  //pointer to parent of this component

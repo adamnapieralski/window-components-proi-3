@@ -150,6 +150,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/proi_project_3.dir/build.make CMakeFiles/proi_project_3.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+shell.o: shell.cpp.o
+
+.PHONY : shell.o
+
+# target to build an object file
+shell.cpp.o:
+	$(MAKE) -f CMakeFiles/proi_project_3.dir/build.make CMakeFiles/proi_project_3.dir/shell.cpp.o
+.PHONY : shell.cpp.o
+
+shell.i: shell.cpp.i
+
+.PHONY : shell.i
+
+# target to preprocess a source file
+shell.cpp.i:
+	$(MAKE) -f CMakeFiles/proi_project_3.dir/build.make CMakeFiles/proi_project_3.dir/shell.cpp.i
+.PHONY : shell.cpp.i
+
+shell.s: shell.cpp.s
+
+.PHONY : shell.s
+
+# target to generate assembly for a file
+shell.cpp.s:
+	$(MAKE) -f CMakeFiles/proi_project_3.dir/build.make CMakeFiles/proi_project_3.dir/shell.cpp.s
+.PHONY : shell.cpp.s
+
 wincomponents.o: wincomponents.cpp.o
 
 .PHONY : wincomponents.o
@@ -189,6 +216,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... shell.o"
+	@echo "... shell.i"
+	@echo "... shell.s"
 	@echo "... wincomponents.o"
 	@echo "... wincomponents.i"
 	@echo "... wincomponents.s"
