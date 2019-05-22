@@ -35,7 +35,7 @@ public:
     void setDimensions(int w, int h);
 
     bool isContained(Component* child);
-    virtual char** getDisplayArray() = 0;
+    char** getDisplayArray();
     virtual void fillDisplayArray(char*** dispArr) = 0;
 
     friend Component* newComponent(int componentType);
@@ -49,7 +49,7 @@ public:
     TitleComp();
     TitleComp(std::string title, int x, int y, int w, int h);
 
-    char** getDisplayArray() override;
+    //char** getDisplayArray() override;
     void fillDisplayArray(char*** dispArr) override;
 
 };
@@ -60,7 +60,7 @@ public:
     SignComp();
     SignComp(char &sign, int x, int y, int w, int h);
 
-    char** getDisplayArray() override;
+    //char** getDisplayArray() override;
     void fillDisplayArray(char*** dispArr) override;
 
 };

@@ -76,51 +76,7 @@ void Component::addChildComp(Component* child) {
 
 }
 
-TitleComp::TitleComp() {
-    this->x = 0;
-    this->y = 0;
-    this->w = 0;
-    this->h = 0;
-    this->title = "";
-}
-
-TitleComp::TitleComp(std::string title, int x, int y, int w, int h) {
-    this->x = x;
-    this->y = y;
-    this->w = w;
-    this->h = h;
-    this->title = title;
-}
-
-void TitleComp::fillDisplayArray(char*** dispArr) {
-    //fill with current component
-    for(int i = 0; i < this->h; ++i){
-        int titleIter = 0;
-        for(int j = 0; j < this->w; ++j){
-            if(titleIter >= this->title.size()) titleIter = 0;
-            *dispArr[i][j] = this->title[titleIter];
-            ++titleIter;
-        }
-    }
-
-    for(auto child : this->children){
-        //create array of pointers for child to fill
-        char*** childDispArray = new char**[child->h];
-        for(int i = 0; i < child->h; ++i){
-            childDispArray[i] = new char*[child->w];
-            for(int j = 0; j < child->w; ++j){
-                childDispArray[i][j] = dispArr[child->y + i][child->x + j];
-            }
-        }
-        child->fillDisplayArray(childDispArray);
-    }
-    for(int i = 0; i < this->h; ++i){
-        delete[] dispArr[i];
-    }
-    delete[] dispArr;
-}
-
-char** TitleComp::getDisplayArray() {
+char** Component::getDisplayArray() {
     char** displayArray = new char*[this->h];
     char*** ptsDisplayArray = new char**[this->h];
 
@@ -138,15 +94,82 @@ char** TitleComp::getDisplayArray() {
     return displayArray;
 }
 
-void SignComp::fillDisplayArray(char*** dispArr) {
-
+TitleComp::TitleComp() {
+    this->x = 0;
+    this->y = 0;
+    this->w = 0;
+    this->h = 0;
+    this->title = "";
 }
 
-char** SignComp::getDisplayArray() {
-    for(auto &child : this->children){
-        child->getDisplayArray();
+TitleComp::TitleComp(std::string title, int x, int y, int w, int h) {
+    this->x = x;
+    this->y = y;
+    this->w = w;
+    this->h = h;
+    this->title = title;
+}
+
+void TitleComp::fillDisplayArray(char*** dispArr) {
+    //fill array with current component's title
+    for(int i = 0; i < this->h; ++i){
+        int titleIter = 0;
+        for(int j = 0; j < this->w; ++j){
+            if(titleIter >= this->title.size()) titleIter = 0;
+            *dispArr[i][j] = this->title[titleIter];
+            ++titleIter;
+        }
     }
+    //iterate through children
+    for(auto child : this->children){
+        //create array of pointers for child to fill (child's size, with pointers to original one)
+        char*** childDispArray = new char**[child->h];
+        for(int i = 0; i < child->h; ++i){
+            childDispArray[i] = new char*[child->w];
+            for(int j = 0; j < child->w; ++j){
+                childDispArray[i][j] = dispArr[child->y + i][child->x + j];
+            }
+        }
+        //recursive filling
+        child->fillDisplayArray(childDispArray);
+    }
+    //free memory
+    for(int i = 0; i < this->h; ++i){
+        delete[] dispArr[i];
+    }
+    delete[] dispArr;
 }
+
+
+void SignComp::fillDisplayArray(char*** dispArr) {
+    //fill array with current component's title
+    for(int i = 0; i < this->h; ++i){
+        int titleIter = 0;
+        for(int j = 0; j < this->w; ++j){
+            *dispArr[i][j] = this->sign;
+            ++titleIter;
+        }
+    }
+    //iterate through children
+    for(auto child : this->children){
+        //create array of pointers for child to fill (child's size, with pointers to original one)
+        char*** childDispArray = new char**[child->h];
+        for(int i = 0; i < child->h; ++i){
+            childDispArray[i] = new char*[child->w];
+            for(int j = 0; j < child->w; ++j){
+                childDispArray[i][j] = dispArr[child->y + i][child->x + j];
+            }
+        }
+        //recursive filling
+        child->fillDisplayArray(childDispArray);
+    }
+    //free memory
+    for(int i = 0; i < this->h; ++i){
+        delete[] dispArr[i];
+    }
+    delete[] dispArr;
+}
+
 
 SignComp::SignComp() {
     this->x = 0;
