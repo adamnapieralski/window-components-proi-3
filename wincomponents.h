@@ -28,6 +28,8 @@ public:
 //    Component();
 //    Component(int x, int y, int w, int h);
 
+    ~Component();
+
     void addChildComp(Component* child);
     int newChildId();
 

@@ -21,6 +21,7 @@ public:
     void showComponentsWindows();
     Component* selectComponent();
     void addComponent();
+    void deleteComponent();
 
 
     void printId(Component* component);

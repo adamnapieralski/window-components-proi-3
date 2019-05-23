@@ -161,6 +161,14 @@ void Shell::addComponent() {
 
     parent->addChildComp(newComp);
 }
+
+void Shell::deleteComponent() {
+    cout << "Zdefiniuj komponent, który chcesz usunac.\n";
+    Component* delComp = this->selectComponent();
+    delete delComp;
+    cout << "Usunieto komponent.\n";
+}
+
 void Shell::setRootComponent() {
 
 }

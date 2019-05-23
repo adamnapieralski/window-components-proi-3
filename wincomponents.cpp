@@ -22,6 +22,17 @@
 //
 //}
 
+Component::~Component() {
+    if(this->parent){
+        auto childErase = find(this->parent->children.begin(), this->parent->children.end(), this);
+        this->parent->children.erase(childErase);
+    }
+
+    for(auto child : this->children){
+        delete child;
+    }
+}
+
 void Component::setPosition(int x, int y) {
     this->x = x;
     this->y = y;
@@ -71,6 +82,7 @@ void Component::addChildComp(Component* child) {
         //set smallest id to set to child
         child->id = this->id;
         child->id.push_back(this->newChildId());
+        child->parent = this;
         this->children.push_back(child);
     }
     else{
@@ -136,6 +148,7 @@ TitleComp::TitleComp(std::string title, int x, int y, int w, int h) {
     this->h = h;
     this->title = title;
     this->id.push_back(0);
+    this->parent = nullptr;
 }
 
 void TitleComp::fillDisplayArray(char*** dispArr) {
@@ -222,7 +235,7 @@ SignComp::SignComp(char &sign, int x, int y, int w, int h) {
     this->h = h;
     this->sign = sign;
     this->id.push_back(0);
-
+    this->parent = nullptr;
 }
 
 Component* newComponent(int componentType) {

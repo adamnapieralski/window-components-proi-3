@@ -41,11 +41,11 @@ int main() {
 //    shell.addComponent();
 //    shell.showComponentsStructure(t1);
 //    shell.showComponentsWindows();
-
-    delete t1;
-    delete t2;
-    delete t3;
-    delete t4;
+    shell.deleteComponent();
+//    delete t1;
+//    delete t2;
+//    delete t3;
+//    delete t4;
 
     return 0;
 }

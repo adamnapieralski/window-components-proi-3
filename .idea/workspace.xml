@@ -48,11 +48,11 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="42" column="34" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
+            <state relative-caret-position="139">
+              <caret line="43" column="28" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -63,8 +63,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wincomponents.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
+            <state relative-caret-position="-180">
+              <caret line="30" column="17" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
               <folding>
                 <element signature="e#120#139#0" expanded="true" />
               </folding>
@@ -75,22 +75,18 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wincomponents.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="167" column="1" selection-start-line="167" selection-start-column="1" selection-end-line="167" selection-end-column="1" />
+            <state relative-caret-position="203">
+              <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
               <folding>
                 <element signature="e#315#365#0" />
                 <element signature="e#396#448#0" />
                 <element signature="e#346#382#0" />
                 <element signature="e#1114#1168#0" />
-                <element signature="e#346#432#0" />
-                <element signature="e#1652#2146#0" />
                 <element signature="e#2211#2275#0" />
                 <element signature="e#1281#1397#0" />
-                <element signature="e#1399#1564#0" />
                 <element signature="e#1894#1951#0" />
                 <element signature="e#2099#2156#0" />
                 <element signature="e#1566#1681#0" />
-                <element signature="e#1683#1836#0" />
                 <element signature="e#2505#3098#0" />
               </folding>
             </state>
@@ -100,8 +96,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/shell.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="28" column="57" selection-start-line="28" selection-start-column="57" selection-end-line="28" selection-end-column="57" />
+            <state relative-caret-position="229">
+              <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
               <folding>
                 <element signature="e#104#123#0" expanded="true" />
               </folding>
@@ -109,15 +105,19 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/shell.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="115" column="31" selection-start-line="115" selection-start-column="31" selection-end-line="115" selection-end-column="31" />
+            <state relative-caret-position="274">
+              <caret line="170" lean-forward="true" selection-start-line="170" selection-end-line="170" />
               <folding>
+                <element signature="e#705#740#0" />
+                <element signature="e#1020#1069#0" />
+                <element signature="e#1224#1483#0" />
                 <element signature="e#1499#1680#0" />
                 <element signature="e#1499#1543#0" />
                 <element signature="e#1867#2383#0" />
+                <element signature="e#1867#1905#0" />
               </folding>
             </state>
           </provider>
@@ -137,8 +137,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/shell.h" />
-        <option value="$PROJECT_DIR$/wincomponents.cpp" />
         <option value="$PROJECT_DIR$/wincomponents.h" />
+        <option value="$PROJECT_DIR$/wincomponents.cpp" />
         <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/shell.cpp" />
       </list>
@@ -203,7 +203,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1558026397506</updated>
-      <workItem from="1558026399459" duration="65250000" />
+      <workItem from="1558026399459" duration="68055000" />
     </task>
     <task id="LOCAL-00001" summary="Beginnigs of components classes">
       <created>1558104756658</created>
@@ -289,11 +289,25 @@
       <option name="project" value="LOCAL" />
       <updated>1558605424334</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Added adding new component">
+      <created>1558616369137</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1558616369137</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Resolved memory leaks from graphic windows array printing">
+      <created>1558617797381</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1558617797381</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65250000" />
+    <option name="totallyTimeSpent" value="68055000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="743" extended-state="6" />
@@ -302,8 +316,8 @@
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.25" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" order="0" />
-      <window_info anchor="bottom" id="Terminal" order="1" />
+      <window_info anchor="bottom" id="Version Control" order="0" weight="0.32903227" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.32903227" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="3" />
       <window_info anchor="bottom" id="Messages" order="4" weight="0.4080645" />
@@ -324,6 +338,32 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Beginnigs of components classes" />
     <MESSAGE value="Added function to set the smallest id to the new child" />
@@ -337,7 +377,9 @@
     <MESSAGE value="Added showComponentsStructure()" />
     <MESSAGE value="Added showComponentsWindows()" />
     <MESSAGE value="Added finding component specified by ID" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added finding component specified by ID" />
+    <MESSAGE value="Added adding new component" />
+    <MESSAGE value="Resolved memory leaks from graphic windows array printing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Resolved memory leaks from graphic windows array printing" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
@@ -350,67 +392,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wincomponents.cpp">
+    <entry file="file:///usr/include/c++/7/bits/stl_iterator.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="167" column="1" selection-start-line="167" selection-start-column="1" selection-end-line="167" selection-end-column="1" />
-          <folding>
-            <element signature="e#315#365#0" />
-            <element signature="e#396#448#0" />
-            <element signature="e#346#382#0" />
-            <element signature="e#1114#1168#0" />
-            <element signature="e#346#432#0" />
-            <element signature="e#1652#2146#0" />
-            <element signature="e#2211#2275#0" />
-            <element signature="e#1281#1397#0" />
-            <element signature="e#1399#1564#0" />
-            <element signature="e#1894#1951#0" />
-            <element signature="e#2099#2156#0" />
-            <element signature="e#1566#1681#0" />
-            <element signature="e#1683#1836#0" />
-            <element signature="e#2505#3098#0" />
-          </folding>
+        <state relative-caret-position="151">
+          <caret line="779" selection-start-line="779" selection-end-line="779" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wincomponents.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
+        <state relative-caret-position="-180">
+          <caret line="30" column="17" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
           <folding>
             <element signature="e#120#139#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/wincomponents.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+          <folding>
+            <element signature="e#315#365#0" />
+            <element signature="e#396#448#0" />
+            <element signature="e#346#382#0" />
+            <element signature="e#1114#1168#0" />
+            <element signature="e#2211#2275#0" />
+            <element signature="e#1281#1397#0" />
+            <element signature="e#1894#1951#0" />
+            <element signature="e#2099#2156#0" />
+            <element signature="e#1566#1681#0" />
+            <element signature="e#2505#3098#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/shell.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="28" column="57" selection-start-line="28" selection-start-column="57" selection-end-line="28" selection-end-column="57" />
+        <state relative-caret-position="229">
+          <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
           <folding>
             <element signature="e#104#123#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shell.cpp">
+    <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="115" column="31" selection-start-line="115" selection-start-column="31" selection-end-line="115" selection-end-column="31" />
+        <state relative-caret-position="139">
+          <caret line="43" column="28" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
           <folding>
-            <element signature="e#1499#1680#0" />
-            <element signature="e#1499#1543#0" />
-            <element signature="e#1867#2383#0" />
+            <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
+    <entry file="file://$PROJECT_DIR$/shell.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="42" column="34" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
+        <state relative-caret-position="274">
+          <caret line="170" lean-forward="true" selection-start-line="170" selection-end-line="170" />
           <folding>
-            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#705#740#0" />
+            <element signature="e#1020#1069#0" />
+            <element signature="e#1224#1483#0" />
+            <element signature="e#1499#1680#0" />
+            <element signature="e#1499#1543#0" />
+            <element signature="e#1867#2383#0" />
+            <element signature="e#1867#1905#0" />
           </folding>
         </state>
       </provider>
