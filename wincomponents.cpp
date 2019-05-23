@@ -94,6 +94,11 @@ char** Component::getDisplayArray() {
 
     this->fillDisplayArray(ptsDisplayArray);
 
+//    for(int i = 0; i < this->h; ++i){
+//        delete[] ptsDisplayArray[i];
+//    }
+//    delete[] ptsDisplayArray;
+
     return displayArray;
 }
 

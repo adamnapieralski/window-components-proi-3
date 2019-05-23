@@ -38,9 +38,9 @@ int main() {
     shell.rootComponent = t1;
     shell.showComponentsStructure(t1);
     shell.showComponentsWindows();
-    shell.addComponent();
-    shell.showComponentsStructure(t1);
-    shell.showComponentsWindows();
+//    shell.addComponent();
+//    shell.showComponentsStructure(t1);
+//    shell.showComponentsWindows();
 
     delete t1;
     delete t2;

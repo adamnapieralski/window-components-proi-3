@@ -62,6 +62,12 @@ void printArray(char** arr, int w, int h){
 void Shell::showComponentsWindows() {
     char** displayArray = this->rootComponent->getDisplayArray();
     printArray(displayArray, this->rootComponent->w, this->rootComponent->h);
+
+    //free memory
+    for(int i = 0; i < this->rootComponent->h; ++i){
+        delete[] displayArray[i];
+    }
+    delete[] displayArray;
 }
 
 deque<int> tokenizeID(string idStr) {
@@ -114,6 +120,7 @@ void Shell::addComponent() {
     string character = "";
     cin.clear();
     cin.ignore(INT8_MAX, '\n');
+
     getline(cin, character);
     while(character.size() == 0 || (newType == Component::sign && character.size() > 1)){
         cout << "Niepoprawne dane. Wprowadz ponownie." << endl;
