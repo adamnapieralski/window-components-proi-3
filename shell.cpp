@@ -64,8 +64,52 @@ void Shell::showComponentsWindows() {
     printArray(displayArray, this->rootComponent->w, this->rootComponent->h);
 }
 
+deque<int> tokenizeID(string idStr) {
+    size_t start;
+    size_t end = 0;
+    const char sep = '.';
+    deque<int> id;
+    while((start = idStr.find_first_not_of(sep, end)) != string::npos){
+        end = idStr.find(sep, start);
+        string idTempStr = idStr.substr(start, end - start);
+        int idTempInt;
+        istringstream iss (idTempStr);
+        iss >> idTempInt;
+        if(iss.good()){
+            id.clear();
+            return id;
+        }
+        id.push_back(idTempInt);
+    }
+    return id;
+}
+
+Component* Shell::selectComponent() {
+    cout << "Podaj ID wybranego komponentu:\n";
+    string idStr;
+    getline(cin, idStr);
+    std::deque<int> id = tokenizeID(idStr);
+    while(id.empty()){
+        cout << "Niepoprawne dane. Wprowadz ID ponownie.\n";
+        getline(cin, idStr);
+        id = tokenizeID(idStr);
+    }
+    Component* foundComp = this->rootComponent->findComponent(id);
+    if(!foundComp){
+        cout << "Nie znaleziono komponentu o podanym ID.\n";
+    }
+    else{
+        return foundComp;
+    }
+}
+
+void Shell::addComponent() {
+
+}
 void Shell::setRootComponent() {
 
 }
+
+
 
 

@@ -38,6 +38,8 @@ public:
     char** getDisplayArray();
     virtual void fillDisplayArray(char*** dispArr) = 0;
 
+    Component* findComponent(std::deque<int> id);
+
     friend Component* newComponent(int componentType);
     friend void deleteComponent(Component* comp);
 };

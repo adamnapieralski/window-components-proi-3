@@ -1,8 +1,9 @@
 #include <iostream>
 #include <deque>
 
-#include "wincomponents.h"
 #include "shell.h"
+#include "wincomponents.h"
+
 
 using namespace std;
 
@@ -37,6 +38,7 @@ int main() {
     shell.rootComponent = t1;
     shell.showComponentsStructure(t1);
     shell.showComponentsWindows();
+    Component* selectedComp = shell.selectComponent();
     delete t1;
     delete t2;
     delete t3;

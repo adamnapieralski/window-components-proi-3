@@ -31,6 +31,7 @@ void Component::setDimensions(int w, int h) {
     this->w = w;
     this->h = h;
 }
+
 int Component::newChildId() {
     //find smallest id to set to the child
     std::deque <int> lastIds;
@@ -56,7 +57,6 @@ int Component::newChildId() {
         }
     }
 }
-
 
 bool Component::isContained(Component *child) {
     if((child->x >= 0) && (child->x + child->w <= this->w) && (child->y >= 0) && (child->y + child->h <= this->h))
@@ -95,6 +95,24 @@ char** Component::getDisplayArray() {
     this->fillDisplayArray(ptsDisplayArray);
 
     return displayArray;
+}
+
+Component* Component::findComponent(std::deque<int> id) {
+    if(id == this->id)
+        return this;
+
+    std::deque<int> partId(id.begin(), id.begin() + this->id.size());
+    if(partId !=  this->id){
+        return nullptr;
+    }
+    std::deque<int> partChildId(id.begin(), id.begin() + this->id.size() + 1);
+    for(auto child : this->children){
+        Component* foundComp = child->findComponent(id);
+        if(foundComp){
+            return foundComp;
+        }
+    }
+    return nullptr;
 }
 
 TitleComp::TitleComp() {

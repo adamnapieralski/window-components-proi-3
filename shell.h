@@ -5,8 +5,10 @@
 #ifndef PROI_PROJECT_3_SHELL_H
 #define PROI_PROJECT_3_SHELL_H
 
-#include "wincomponents.h"
+#include <iostream>
+#include <sstream>
 #include <deque>
+#include "wincomponents.h"
 
 class Shell{
 public:
@@ -17,11 +19,14 @@ public:
     void showMainMenu();
     void showComponentsStructure(Component* component, int depth = 0);
     void showComponentsWindows();
+    Component* selectComponent();
+    void addComponent();
 
 
     void printId(Component* component);
 
     friend void printArray(char** arr, int w, int h);
+    friend std::deque<int> tokenizeID(std::string idStr);
 
 };
 
