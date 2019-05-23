@@ -37,10 +37,11 @@ public:
     bool isContained(Component* child);
     char** getDisplayArray();
     virtual void fillDisplayArray(char*** dispArr) = 0;
+    virtual void setCharacteristic(std::string characteristic) = 0;
 
     Component* findComponent(std::deque<int> id);
 
-    friend Component* newComponent(int componentType);
+    //friend Component* newComponent(int componentType);
     friend void deleteComponent(Component* comp);
 };
 
@@ -53,6 +54,7 @@ public:
 
     //char** getDisplayArray() override;
     void fillDisplayArray(char*** dispArr) override;
+    void setCharacteristic(std::string characteristic) override;
 
 };
 
@@ -64,7 +66,11 @@ public:
 
     //char** getDisplayArray() override;
     void fillDisplayArray(char*** dispArr) override;
+    void setCharacteristic(std::string characteristic) override;
+
 
 };
+
+Component* newComponent(int componentType);
 
 #endif //PROI_PROJECT_3_WINCOMPONENTS_H

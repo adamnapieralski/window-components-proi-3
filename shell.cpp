@@ -104,7 +104,55 @@ Component* Shell::selectComponent() {
 }
 
 void Shell::addComponent() {
+    cout << "Zdefiniuj komponent, ktorego potomkiem ma sie stac dodawany komponent.\n";
+    Component* parent = this->selectComponent();
+    //wybor typu komponentu
+    auto newType = this->getComponentType();
+    auto newComp = newComponent(newType);
 
+    cout << "Podaj znak/tekst charakterystyczny dla komponentu\n";
+    string character = "";
+    cin.clear();
+    cin.ignore(INT8_MAX, '\n');
+    getline(cin, character);
+    while(character.size() == 0 || (newType == Component::sign && character.size() > 1)){
+        cout << "Niepoprawne dane. Wprowadz ponownie." << endl;
+        getline(cin, character);
+    }
+    newComp->setCharacteristic(character);
+
+    cout << "Podaj polozenie nowego komponentu wzgledem 'rodzica'\n";
+    int x, y;
+    while ((cout << "\tx: " && !(cin >> x)) || x < 0 || x >= parent->w || cin.peek() != '\n')
+    {
+        cout << "Niepoprawne dane. Wprowadz ponownie." << endl;
+        cin.clear();
+        cin.ignore(INT8_MAX, '\n');
+    }
+    while ((cout << "\ty: " && !(cin >> y)) || y < 0 || y >= parent->h || cin.peek() != '\n')
+    {
+        cout << "Niepoprawne dane. Wprowadz ponownie." << endl;
+        cin.clear();
+        cin.ignore(INT8_MAX, '\n');
+    }
+    cout << "Podaj wymiary nowego komponentu\n";
+    int w, h;
+    while ((cout << "\tszerokosc: " && !(cin >> w)) || w < 0 || w >= parent->w - x || cin.peek() != '\n')
+    {
+        cout << "Niepoprawne dane. Wprowadz ponownie." << endl;
+        cin.clear();
+        cin.ignore(INT8_MAX, '\n');
+    }
+    while ((cout << "\twysokosc: " && !(cin >> h)) || h < 0 || h >= parent->h - y || cin.peek() != '\n')
+    {
+        cout << "Niepoprawne dane. Wprowadz ponownie." << endl;
+        cin.clear();
+        cin.ignore(INT8_MAX, '\n');
+    }
+    newComp->setPosition(x, y);
+    newComp->setDimensions(w, h);
+
+    parent->addChildComp(newComp);
 }
 void Shell::setRootComponent() {
 

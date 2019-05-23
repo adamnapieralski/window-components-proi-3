@@ -163,6 +163,9 @@ void TitleComp::fillDisplayArray(char*** dispArr) {
     delete[] dispArr;
 }
 
+void TitleComp::setCharacteristic(std::string characteristic) {
+    this->title = characteristic;
+}
 
 void SignComp::fillDisplayArray(char*** dispArr) {
     //fill array with current component's title
@@ -191,6 +194,10 @@ void SignComp::fillDisplayArray(char*** dispArr) {
         delete[] dispArr[i];
     }
     delete[] dispArr;
+}
+
+void SignComp::setCharacteristic(std::string characteristic) {
+    this->sign= characteristic[0];
 }
 
 

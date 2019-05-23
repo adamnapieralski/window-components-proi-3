@@ -38,7 +38,10 @@ int main() {
     shell.rootComponent = t1;
     shell.showComponentsStructure(t1);
     shell.showComponentsWindows();
-    Component* selectedComp = shell.selectComponent();
+    shell.addComponent();
+    shell.showComponentsStructure(t1);
+    shell.showComponentsWindows();
+
     delete t1;
     delete t2;
     delete t3;

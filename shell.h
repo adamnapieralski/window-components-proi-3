@@ -27,7 +27,7 @@ public:
 
     friend void printArray(char** arr, int w, int h);
     friend std::deque<int> tokenizeID(std::string idStr);
-
 };
+
 
 #endif //PROI_PROJECT_3_SHELL_H
