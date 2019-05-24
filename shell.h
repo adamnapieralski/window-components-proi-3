@@ -23,6 +23,8 @@ public:
     void addComponent();
     void deleteComponent();
     void showComponentInfo();
+    int getMenuChoice();
+    bool exeMenu();
 
 
 //    void printId(Component* component);

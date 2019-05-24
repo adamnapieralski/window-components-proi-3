@@ -25,11 +25,12 @@ Component::componentTypes Shell::getComponentType() {
 
 void Shell::showMainMenu() {
     cout << "MAIN MENU\n\n";
-    cout << "0 - " << "Wypisz strukture komponentow\n";
-    cout << "1 - " << "Przedstaw graficznie komponenty\n";
-    cout << "2 - " << "Dodaj komponent\n";
-    cout << "3 - " << "Usun komponent\n";
-    cout << "4 - " << "Pokaz szczegoly komponentu\n";
+    cout << "1 - " << "Wypisz strukture komponentow\n";
+    cout << "2 - " << "Przedstaw graficznie komponenty\n";
+    cout << "3 - " << "Dodaj komponent\n";
+    cout << "4 - " << "Usun komponent\n";
+    cout << "5 - " << "Pokaz szczegoly komponentu\n";
+    cout << "0 - " << "Wyjscie\n";
 }
 
 //void Shell::printId(Component* component) {
@@ -177,8 +178,47 @@ void Shell::showComponentInfo(){
     infoComponent->showInfo();
 }
 
-void Shell::setRootComponent() {
+int Shell::getMenuChoice(){
+    int choice;
+    while (!(std::cin >> choice) || std::cin.peek() != '\n')
+    {
+        std::cout << "Niepoprawne dane. Wprowadz ponownie." << std::endl;
+        std::cin.clear();
+        std::cin.ignore(INT8_MAX, '\n');
+    }
+    return choice;
+}
 
+bool Shell::exeMenu() {
+    this->showMainMenu();
+    switch(this->getMenuChoice()){
+        case 0:{
+            std::cout << "\nWYJSCIE\n";
+            return false;
+        }
+        case 1:
+            this->showComponentsStructure(this->rootComponent);
+            return true;
+        case 2:
+            this->showComponentsWindows();
+            return true;
+        case 3:
+            this->addComponent();
+            return true;
+        case 4:
+            this->deleteComponent();
+            return true;
+        case 5:
+            this->showComponentInfo();
+            return true;
+        default:
+            std::cout << "Niepoprawne polecenie. Sprobuj ponownie.\n\n";
+            return true;
+    }
+}
+
+void Shell::setRootComponent() {
+    
 }
 
 
