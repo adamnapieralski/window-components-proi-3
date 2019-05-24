@@ -34,14 +34,16 @@ int main() {
     }
     delete[] tablica;
 
+    t4->showInfo();
     Shell shell;
     shell.rootComponent = t1;
+    shell.showMainMenu();
     shell.showComponentsStructure(t1);
     shell.showComponentsWindows();
 //    shell.addComponent();
 //    shell.showComponentsStructure(t1);
 //    shell.showComponentsWindows();
-    shell.deleteComponent();
+    shell.showComponentInfo();
 //    delete t1;
 //    delete t2;
 //    delete t3;

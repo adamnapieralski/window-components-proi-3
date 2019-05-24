@@ -32,18 +32,20 @@ void Shell::showMainMenu() {
     cout << "4 - " << "Pokaz szczegoly komponentu\n";
 }
 
-void Shell::printId(Component* component) {
-    for(int i = 0; i < component->id.size(); ++i){
-        cout << component->id[i];
-        if(i < component->id.size() - 1)
-            cout << ".";
-    }
-}
+//void Shell::printId(Component* component) {
+//    for(int i = 0; i < component->id.size(); ++i){
+//        cout << component->id[i];
+//        if(i < component->id.size() - 1)
+//            cout << ".";
+//    }
+//}
 
 void Shell::showComponentsStructure(Component* component, int depth) {
+
     for(int i = 0; i < depth; ++i)
         cout << "\t";
-    printId(component);
+    cout << component->id << endl;
+    //printId(component);
     cout << endl;
     ++depth;
     for(auto child : component->children)
@@ -167,6 +169,12 @@ void Shell::deleteComponent() {
     Component* delComp = this->selectComponent();
     delete delComp;
     cout << "Usunieto komponent.\n";
+}
+
+void Shell::showComponentInfo(){
+    cout << "Zdefiniuj komponent, o ktorym chcesz uzyskac szczegolowe informacje\n";
+    Component* infoComponent = this->selectComponent();
+    infoComponent->showInfo();
 }
 
 void Shell::setRootComponent() {

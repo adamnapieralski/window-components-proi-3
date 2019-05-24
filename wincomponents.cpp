@@ -132,6 +132,24 @@ Component* Component::findComponent(std::deque<int> id) {
     return nullptr;
 }
 
+int Component::getGlobalX() {
+    int x = 0;
+    if(this->parent){
+        x += this->parent->getGlobalX();
+    }
+    x += this->x;
+    return x;
+}
+
+int Component::getGlobalY() {
+    int y = 0;
+    if(this->parent){
+        y += this->parent->getGlobalX();
+    }
+    y += this->y;
+    return y;
+}
+
 TitleComp::TitleComp() {
     this->x = 0;
     this->y = 0;
@@ -183,6 +201,21 @@ void TitleComp::fillDisplayArray(char*** dispArr) {
 
 void TitleComp::setCharacteristic(std::string characteristic) {
     this->title = characteristic;
+}
+
+void TitleComp::showInfo() {
+    std::cout << "\tID:\t" << this->id << std::endl;
+    std::cout << "\tWypelnienie:\t" << this->title << std::endl;
+    std::cout << "\tWymiary (szer x wys):\t" << this->w << " x " << this->h << std::endl;
+    std::cout << "\tPolozenie wzgledem 'rodzica' (x, y):\t" << "(" << this->x << ", " << this->y << ")" << std::endl;
+    std::cout << "\tPolozenie globalne (x, y):\t" << "(" << this->getGlobalX() << ", " << this->getGlobalY()
+    << ")" << std::endl;
+    std::cout << "\t'Rodzic':\t" << this->parent->id << std::endl;
+    std::cout << "\tPotomkowie:\t" << std::endl;
+    for(auto child : this->children){
+        std::cout << "\t\t" << child->id << std::endl;
+    }
+    std::cout << std::endl;
 }
 
 void SignComp::fillDisplayArray(char*** dispArr) {
@@ -238,6 +271,21 @@ SignComp::SignComp(char &sign, int x, int y, int w, int h) {
     this->parent = nullptr;
 }
 
+void SignComp::showInfo() {
+    std::cout << "\tID:\t" << this->id << std::endl;
+    std::cout << "\tWypelnienie:\t" << this->sign << std::endl;
+    std::cout << "\tWymiary (szer x wys):\t" << this->w << " x " << this->h << std::endl;
+    std::cout << "\tPolozenie wzgledem 'rodzica' (x, y):\t" << "(" << this->x << ", " << this->y << ")" << std::endl;
+    std::cout << "\tPolozenie globalne (x, y):\t" << "(" << this->getGlobalX() << ", " << this->getGlobalY()
+              << ")" << std::endl;
+    std::cout << "\t'Rodzic':\t" << this->parent->id << std::endl;
+    std::cout << "\tPotomkowie:\t" << std::endl;
+    for(auto child : this->children){
+        std::cout << "\t\t" << child->id << std::endl;
+    }
+    std::cout << std::endl;
+}
+
 Component* newComponent(int componentType) {
     switch(componentType){
         case 0:
@@ -263,3 +311,13 @@ void deleteComponent(Component* comp){
         delete comp;
     }
 }
+
+std::ostream &operator<<(std::ostream &os, const std::deque<int> &id) {
+    for(auto i = id.begin(); i != id.end(); i++){
+        os << *i;
+        if(i != id.end() - 1)
+            os << ".";
+    }
+    return os;
+}
+

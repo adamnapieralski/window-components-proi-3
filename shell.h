@@ -22,9 +22,10 @@ public:
     Component* selectComponent();
     void addComponent();
     void deleteComponent();
+    void showComponentInfo();
 
 
-    void printId(Component* component);
+//    void printId(Component* component);
 
     friend void printArray(char** arr, int w, int h);
     friend std::deque<int> tokenizeID(std::string idStr);
