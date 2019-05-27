@@ -25,8 +25,8 @@ public:
     std::vector <Component*> children;   //pointers to components contained in this component
     Component* parent;  //pointer to parent of this component
 
-//    Component();
-//    Component(int x, int y, int w, int h);
+    Component();
+    Component(int x, int y, int w, int h);
 
     ~Component();
 

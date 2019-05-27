@@ -5,22 +5,26 @@
 #include "wincomponents.h"
 
 
-//Component::Component() {
-//    this->x = 0;
-//    this->y = 0;
-//    this->w = 0;
-//    this->h = 0;
-//    this->id.push_back(0);
-//}
-//
-//Component::Component(int x, int y, int w, int h) {
-//    this->x = x;
-//    this->y = y;
-//    this->w = w;
-//    this->h = h;
-//    this->id.push_back(0);
-//
-//}
+Component::Component() {
+    this->x = 0;
+    this->y = 0;
+    this->w = 0;
+    this->h = 0;
+    this->id.push_back(0);
+    this->parent = nullptr;
+    this->children.clear();
+}
+
+Component::Component(int x, int y, int w, int h) {
+    this->x = x;
+    this->y = y;
+    this->w = w;
+    this->h = h;
+    this->id.push_back(0);
+    this->parent = nullptr;
+    this->children.clear();
+
+}
 
 Component::~Component() {
     if(this->parent){
@@ -160,13 +164,7 @@ TitleComp::TitleComp() {
 }
 
 TitleComp::TitleComp(std::string title, int x, int y, int w, int h) {
-    this->x = x;
-    this->y = y;
-    this->w = w;
-    this->h = h;
     this->title = title;
-    this->id.push_back(0);
-    this->parent = nullptr;
 }
 
 void TitleComp::fillDisplayArray(char*** dispArr) {
@@ -253,22 +251,11 @@ void SignComp::setCharacteristic(std::string characteristic) {
 
 
 SignComp::SignComp() {
-    this->x = 0;
-    this->y = 0;
-    this->w = 0;
-    this->h = 0;
     this->sign = '\0';
-    this->id.push_back(0);
 }
 
 SignComp::SignComp(char &sign, int x, int y, int w, int h) {
-    this->x = x;
-    this->y = y;
-    this->w = w;
-    this->h = h;
     this->sign = sign;
-    this->id.push_back(0);
-    this->parent = nullptr;
 }
 
 void SignComp::showInfo() {
@@ -278,7 +265,10 @@ void SignComp::showInfo() {
     std::cout << "\tPolozenie wzgledem 'rodzica' (x, y):\t" << "(" << this->x << ", " << this->y << ")" << std::endl;
     std::cout << "\tPolozenie globalne (x, y):\t" << "(" << this->getGlobalX() << ", " << this->getGlobalY()
               << ")" << std::endl;
-    std::cout << "\t'Rodzic':\t" << this->parent->id << std::endl;
+    if(this->parent)
+        std::cout << "\t'Rodzic':\t" << this->parent->id << std::endl;
+    else
+        std::cout << "\t'Rodzic':\t" << "brak - komponent nadrzedny" << std::endl;
     std::cout << "\tPotomkowie:\t" << std::endl;
     for(auto child : this->children){
         std::cout << "\t\t" << child->id << std::endl;

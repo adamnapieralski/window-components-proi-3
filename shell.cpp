@@ -81,14 +81,15 @@ deque<int> tokenizeID(string idStr) {
     while((start = idStr.find_first_not_of(sep, end)) != string::npos){
         end = idStr.find(sep, start);
         string idTempStr = idStr.substr(start, end - start);
-        int idTempInt;
-        istringstream iss (idTempStr);
-        iss >> idTempInt;
-        if(iss.good()){
+        try {
+            int idTempInt = stoi(idTempStr);
+            id.push_back(idTempInt);
+
+        }
+        catch(invalid_argument){
             id.clear();
             return id;
         }
-        id.push_back(idTempInt);
     }
     return id;
 }
@@ -96,6 +97,8 @@ deque<int> tokenizeID(string idStr) {
 Component* Shell::selectComponent() {
     cout << "Podaj ID wybranego komponentu:\n";
     string idStr;
+    cin.clear();
+    cin.ignore(INT8_MAX, '\n');
     getline(cin, idStr);
     std::deque<int> id = tokenizeID(idStr);
     while(id.empty()){
@@ -106,6 +109,7 @@ Component* Shell::selectComponent() {
     Component* foundComp = this->rootComponent->findComponent(id);
     if(!foundComp){
         cout << "Nie znaleziono komponentu o podanym ID.\n";
+        return nullptr;
     }
     else{
         return foundComp;
@@ -115,11 +119,13 @@ Component* Shell::selectComponent() {
 void Shell::addComponent() {
     cout << "Zdefiniuj komponent, ktorego potomkiem ma sie stac dodawany komponent.\n";
     Component* parent = this->selectComponent();
+    if(!parent)
+        return;
     //wybor typu komponentu
     auto newType = this->getComponentType();
     auto newComp = newComponent(newType);
 
-    cout << "Podaj znak/tekst charakterystyczny dla komponentu\n";
+    cout << "Podaj znak/tekst charakterystyczny dla dodawanego komponentu\n";
     string character = "";
     cin.clear();
     cin.ignore(INT8_MAX, '\n');
@@ -147,13 +153,13 @@ void Shell::addComponent() {
     }
     cout << "Podaj wymiary nowego komponentu\n";
     int w, h;
-    while ((cout << "\tszerokosc: " && !(cin >> w)) || w < 0 || w >= parent->w - x || cin.peek() != '\n')
+    while ((cout << "\tszerokosc: " && !(cin >> w)) || w < 0 || w > parent->w - x || cin.peek() != '\n')
     {
         cout << "Niepoprawne dane. Wprowadz ponownie." << endl;
         cin.clear();
         cin.ignore(INT8_MAX, '\n');
     }
-    while ((cout << "\twysokosc: " && !(cin >> h)) || h < 0 || h >= parent->h - y || cin.peek() != '\n')
+    while ((cout << "\twysokosc: " && !(cin >> h)) || h < 0 || h > parent->h - y || cin.peek() != '\n')
     {
         cout << "Niepoprawne dane. Wprowadz ponownie." << endl;
         cin.clear();
@@ -193,6 +199,7 @@ bool Shell::exeMenu() {
     this->showMainMenu();
     switch(this->getMenuChoice()){
         case 0:{
+            if(this->rootComponent) delete this->rootComponent;
             std::cout << "\nWYJSCIE\n";
             return false;
         }
@@ -218,7 +225,44 @@ bool Shell::exeMenu() {
 }
 
 void Shell::setRootComponent() {
-    
+    cout << "Zdefiniuj glowny - nadrzedny komponent.\n\n";
+    //wybor typu komponentu
+    auto newType = this->getComponentType();
+    auto rootComp = newComponent(newType);
+
+
+    cout << "Podaj znak/tekst charakterystyczny dla dodawanego komponentu\n";
+    string character;
+    cin.clear();
+    cin.ignore(INT8_MAX, '\n');
+    getline(cin, character);
+
+    while(character.size() == 0 || (newType == Component::sign && character.size() > 1)){
+        cout << "Niepoprawne dane. Wprowadz ponownie." << endl;
+        getline(cin, character);
+    }
+    rootComp->setCharacteristic(character);
+
+
+    cout << "Podaj jego wymiary:\n";
+    int w, h;
+    while ((cout << "\tszerokosc: " && !(cin >> w)) || w < 0 || cin.peek() != '\n')
+    {
+        cout << "Niepoprawne dane. Wprowadz ponownie." << endl;
+        cin.clear();
+        cin.ignore(INT8_MAX, '\n');
+    }
+    while ((cout << "\twysokosc: " && !(cin >> h)) || h < 0 || cin.peek() != '\n')
+    {
+        cout << "Niepoprawne dane. Wprowadz ponownie." << endl;
+        cin.clear();
+        cin.ignore(INT8_MAX, '\n');
+    }
+    rootComp->setPosition(0, 0);
+    rootComp->setDimensions(w, h);
+    rootComp->parent = nullptr;
+    this->rootComponent = rootComp;
+
 }
 
 

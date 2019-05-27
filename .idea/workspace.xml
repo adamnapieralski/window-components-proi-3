@@ -15,7 +15,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shell.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/shell.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shell.h" beforeDir="false" afterPath="$PROJECT_DIR$/shell.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wincomponents.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/wincomponents.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wincomponents.h" beforeDir="false" afterPath="$PROJECT_DIR$/wincomponents.h" afterDir="false" />
     </list>
@@ -51,8 +50,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="101">
-              <caret line="43" column="40" lean-forward="true" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="40" />
+            <state relative-caret-position="143">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -63,8 +62,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wincomponents.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="77" column="28" lean-forward="true" selection-start-line="77" selection-start-column="28" selection-end-line="77" selection-end-column="28" />
+            <state relative-caret-position="89">
+              <caret line="27" selection-start-line="27" selection-end-line="29" />
               <folding>
                 <element signature="e#120#139#0" expanded="true" />
               </folding>
@@ -72,11 +71,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wincomponents.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="280" column="66" lean-forward="true" selection-start-line="280" selection-start-column="66" selection-end-line="280" selection-end-column="66" />
+            <state relative-caret-position="-2368">
+              <caret line="113" column="38" lean-forward="true" selection-start-line="113" selection-start-column="38" selection-end-line="113" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -84,8 +83,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/shell.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="27" column="25" selection-start-line="27" selection-end-line="28" />
+            <state relative-caret-position="317">
+              <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
               <folding>
                 <element signature="e#104#123#0" expanded="true" />
               </folding>
@@ -93,15 +92,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/shell.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="176" column="30" selection-start-line="176" selection-start-column="30" selection-end-line="176" selection-end-column="30" />
-              <folding>
-                <element signature="e#1499#1680#0" />
-                <element signature="e#3047#4920#0" />
-              </folding>
+            <state relative-caret-position="105">
+              <caret line="82" column="60" selection-start-line="82" selection-start-column="60" selection-end-line="82" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -120,10 +115,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/shell.h" />
-        <option value="$PROJECT_DIR$/wincomponents.h" />
-        <option value="$PROJECT_DIR$/shell.cpp" />
         <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/wincomponents.h" />
         <option value="$PROJECT_DIR$/wincomponents.cpp" />
+        <option value="$PROJECT_DIR$/shell.cpp" />
       </list>
     </option>
   </component>
@@ -138,6 +133,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -149,7 +145,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -187,7 +182,8 @@
       <option name="presentableId" value="Default" />
       <updated>1558026397506</updated>
       <workItem from="1558026399459" duration="71437000" />
-      <workItem from="1558686366942" duration="3213000" />
+      <workItem from="1558686366942" duration="9746000" />
+      <workItem from="1558949666147" duration="2999000" />
     </task>
     <task id="LOCAL-00001" summary="Beginnigs of components classes">
       <created>1558104756658</created>
@@ -294,27 +290,42 @@
       <option name="project" value="LOCAL" />
       <updated>1558619279465</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Added showing specific info about component">
+      <created>1558689669052</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1558689669052</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Added main menu execution">
+      <created>1558695484689</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1558695484689</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74650000" />
+    <option name="totallyTimeSpent" value="84182000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="743" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.25377643" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.25755286" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.32903227" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.32903227" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="3" />
-      <window_info anchor="bottom" id="Messages" order="4" weight="0.32903227" />
+      <window_info anchor="bottom" id="Messages" order="4" weight="0.5548387" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.4919355" />
-      <window_info anchor="bottom" id="Debug" order="8" weight="0.30806452" />
+      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.44677418" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.42741936" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="CMake" order="10" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
@@ -384,7 +395,20 @@
     <MESSAGE value="Added adding new component" />
     <MESSAGE value="Resolved memory leaks from graphic windows array printing" />
     <MESSAGE value="Added deleting of components" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added deleting of components" />
+    <MESSAGE value="Added showing specific info about component" />
+    <MESSAGE value="Added main menu execution" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added main menu execution" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/wincomponents.cpp</url>
+          <line>271</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file:///usr/include/c++/7/bits/basic_ios.h">
@@ -406,39 +430,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wincomponents.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="77" column="28" lean-forward="true" selection-start-line="77" selection-start-column="28" selection-end-line="77" selection-end-column="28" />
+        <state relative-caret-position="89">
+          <caret line="27" selection-start-line="27" selection-end-line="29" />
           <folding>
             <element signature="e#120#139#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shell.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="27" column="25" selection-start-line="27" selection-end-line="28" />
-          <folding>
-            <element signature="e#104#123#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shell.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="176" column="30" selection-start-line="176" selection-start-column="30" selection-end-line="176" selection-end-column="30" />
-          <folding>
-            <element signature="e#1499#1680#0" />
-            <element signature="e#3047#4920#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="43" column="40" lean-forward="true" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="40" />
+        <state relative-caret-position="143">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
@@ -447,8 +450,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wincomponents.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="280" column="66" lean-forward="true" selection-start-line="280" selection-start-column="66" selection-end-line="280" selection-end-column="66" />
+        <state relative-caret-position="-2368">
+          <caret line="113" column="38" lean-forward="true" selection-start-line="113" selection-start-column="38" selection-end-line="113" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shell.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+          <folding>
+            <element signature="e#104#123#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shell.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="82" column="60" selection-start-line="82" selection-start-column="60" selection-end-line="82" selection-end-column="60" />
         </state>
       </provider>
     </entry>
