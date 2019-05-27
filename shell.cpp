@@ -174,8 +174,13 @@ void Shell::addComponent() {
 void Shell::deleteComponent() {
     cout << "Zdefiniuj komponent, który chcesz usunac.\n";
     Component* delComp = this->selectComponent();
-    delete delComp;
-    cout << "Usunieto komponent.\n";
+    if(delComp == this->rootComponent){
+        cout << "Nie mozna usunac komponentu nadrzednego.\n";
+    }
+    else{
+        delete delComp;
+        cout << "Usunieto komponent.\n";
+    }
 }
 
 void Shell::showComponentInfo(){
