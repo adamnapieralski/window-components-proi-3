@@ -26,7 +26,7 @@ Component::componentTypes Shell::getComponentType() {
 }
 
 void Shell::showMainMenu() {
-    cout << "MAIN MENU\n\n";
+    cout << "\nMAIN MENU\n\n";
     cout << "1 - " << "Wypisz strukture komponentow\n";
     cout << "2 - " << "Przedstaw graficznie komponenty\n";
     cout << "3 - " << "Dodaj komponent\n";
