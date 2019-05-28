@@ -84,7 +84,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/napiad/studia/eiti/proi/proi-project-3/main.cpp">
+		<Unit filename="/home/napiad/studia/eiti/proi/proi-project-3/proi3.cpp">
 			<Option target="proi_project_3"/>
 		</Unit>
 		<Unit filename="/home/napiad/studia/eiti/proi/proi-project-3/shell.cpp">

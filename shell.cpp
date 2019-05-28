@@ -20,6 +20,8 @@ Component::componentTypes Shell::getComponentType() {
     switch(choice){
         case 0: return Component::title;
         case 1: return Component::sign;
+        default:
+            throw out_of_range("Component type not handled");
     }
 }
 
@@ -33,21 +35,11 @@ void Shell::showMainMenu() {
     cout << "0 - " << "Wyjscie\n";
 }
 
-//void Shell::printId(Component* component) {
-//    for(int i = 0; i < component->id.size(); ++i){
-//        cout << component->id[i];
-//        if(i < component->id.size() - 1)
-//            cout << ".";
-//    }
-//}
-
 void Shell::showComponentsStructure(Component* component, int depth) {
 
     for(int i = 0; i < depth; ++i)
         cout << "\t";
     cout << component->id << endl;
-    //printId(component);
-    cout << endl;
     ++depth;
     for(auto child : component->children)
         showComponentsStructure(child, depth);
@@ -86,7 +78,7 @@ deque<int> tokenizeID(string idStr) {
             id.push_back(idTempInt);
 
         }
-        catch(invalid_argument){
+        catch(invalid_argument&){
             id.clear();
             return id;
         }
@@ -126,12 +118,12 @@ void Shell::addComponent() {
     auto newComp = newComponent(newType);
 
     cout << "Podaj znak/tekst charakterystyczny dla dodawanego komponentu\n";
-    string character = "";
+    string character;
     cin.clear();
     cin.ignore(INT8_MAX, '\n');
 
     getline(cin, character);
-    while(character.size() == 0 || (newType == Component::sign && character.size() > 1)){
+    while(character.empty() || (newType == Component::sign && character.size() > 1)){
         cout << "Niepoprawne dane. Wprowadz ponownie." << endl;
         getline(cin, character);
     }
@@ -186,7 +178,8 @@ void Shell::deleteComponent() {
 void Shell::showComponentInfo(){
     cout << "Zdefiniuj komponent, o ktorym chcesz uzyskac szczegolowe informacje\n";
     Component* infoComponent = this->selectComponent();
-    infoComponent->showInfo();
+    if(infoComponent)
+        infoComponent->showInfo();
 }
 
 int Shell::getMenuChoice(){
@@ -209,7 +202,9 @@ bool Shell::exeMenu() {
             return false;
         }
         case 1:
+            cout << endl << "Struktura komponentów" << endl;
             this->showComponentsStructure(this->rootComponent);
+            cout << endl;
             return true;
         case 2:
             this->showComponentsWindows();
@@ -267,7 +262,6 @@ void Shell::setRootComponent() {
     rootComp->setDimensions(w, h);
     rootComp->parent = nullptr;
     this->rootComponent = rootComp;
-
 }
 
 

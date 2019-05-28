@@ -123,32 +123,32 @@ proi_project_3/fast:
 	$(MAKE) -f CMakeFiles/proi_project_3.dir/build.make CMakeFiles/proi_project_3.dir/build
 .PHONY : proi_project_3/fast
 
-main.o: main.cpp.o
+proi3.o: proi3.cpp.o
 
-.PHONY : main.o
+.PHONY : proi3.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/proi_project_3.dir/build.make CMakeFiles/proi_project_3.dir/main.cpp.o
-.PHONY : main.cpp.o
+proi3.cpp.o:
+	$(MAKE) -f CMakeFiles/proi_project_3.dir/build.make CMakeFiles/proi_project_3.dir/proi3.cpp.o
+.PHONY : proi3.cpp.o
 
-main.i: main.cpp.i
+proi3.i: proi3.cpp.i
 
-.PHONY : main.i
+.PHONY : proi3.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/proi_project_3.dir/build.make CMakeFiles/proi_project_3.dir/main.cpp.i
-.PHONY : main.cpp.i
+proi3.cpp.i:
+	$(MAKE) -f CMakeFiles/proi_project_3.dir/build.make CMakeFiles/proi_project_3.dir/proi3.cpp.i
+.PHONY : proi3.cpp.i
 
-main.s: main.cpp.s
+proi3.s: proi3.cpp.s
 
-.PHONY : main.s
+.PHONY : proi3.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/proi_project_3.dir/build.make CMakeFiles/proi_project_3.dir/main.cpp.s
-.PHONY : main.cpp.s
+proi3.cpp.s:
+	$(MAKE) -f CMakeFiles/proi_project_3.dir/build.make CMakeFiles/proi_project_3.dir/proi3.cpp.s
+.PHONY : proi3.cpp.s
 
 shell.o: shell.cpp.o
 
@@ -213,9 +213,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... proi_project_3"
 	@echo "... edit_cache"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... proi3.o"
+	@echo "... proi3.i"
+	@echo "... proi3.s"
 	@echo "... shell.o"
 	@echo "... shell.i"
 	@echo "... shell.s"

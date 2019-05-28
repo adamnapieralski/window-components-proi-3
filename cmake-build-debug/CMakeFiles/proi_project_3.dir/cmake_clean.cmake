@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/proi_project_3.dir/main.cpp.o"
+  "CMakeFiles/proi_project_3.dir/proi3.cpp.o"
   "CMakeFiles/proi_project_3.dir/wincomponents.cpp.o"
   "CMakeFiles/proi_project_3.dir/shell.cpp.o"
   "proi_project_3.pdb"

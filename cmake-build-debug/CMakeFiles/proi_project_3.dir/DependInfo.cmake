@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/napiad/studia/eiti/proi/proi-project-3/main.cpp" "/home/napiad/studia/eiti/proi/proi-project-3/cmake-build-debug/CMakeFiles/proi_project_3.dir/main.cpp.o"
+  "/home/napiad/studia/eiti/proi/proi-project-3/proi3.cpp" "/home/napiad/studia/eiti/proi/proi-project-3/cmake-build-debug/CMakeFiles/proi_project_3.dir/proi3.cpp.o"
   "/home/napiad/studia/eiti/proi/proi-project-3/shell.cpp" "/home/napiad/studia/eiti/proi/proi-project-3/cmake-build-debug/CMakeFiles/proi_project_3.dir/shell.cpp.o"
   "/home/napiad/studia/eiti/proi/proi-project-3/wincomponents.cpp" "/home/napiad/studia/eiti/proi/proi-project-3/cmake-build-debug/CMakeFiles/proi_project_3.dir/wincomponents.cpp.o"
   )

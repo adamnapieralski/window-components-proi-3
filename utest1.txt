@@ -1,0 +1,48 @@
+0asd
+cv s s
+0
+_
+bb
+123sad
+20
+20 as
+
+10
+1
+2
+5
+0
+4
+asd
+5
+4
+0
+dodawanie nowego komponentu
+3
+0
+1
+/
+niepoprawne polozenie
+21
+10
+5
+niepoprawne wymiary
+-20
+20
+10
+5
+1
+2
+zle dane do menu
+6asd
+1aaa
+5 a a
+Usuwanie komponentu
+4
+0
+4
+0.asd
+0.0
+1
+0
+

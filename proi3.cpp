@@ -7,17 +7,18 @@
 
 using namespace std;
 
-enum componentTypes2 {
-    title,
-    sign
-};
-
-
 int main() {
+
+    vector<int> vec{1};
+    auto found = find(vec.begin(), vec.end(), 1);
+    cout << vec.size();
+    vec.erase(found);
+    cout << endl << vec.size();
 
     Shell shell;
     shell.setRootComponent();
     while(shell.exeMenu()){}
+
 //    auto t1 = new TitleComp("xyz", 0, 0, 12, 6);
 //    cout << t1->id.size() << endl;
 //    auto t2 = new TitleComp(".", 2, 2, 6, 3);

@@ -3,4 +3,4 @@ project(proi_project_3)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(proi_project_3 main.cpp wincomponents.cpp wincomponents.h shell.cpp shell.h)
+add_executable(proi_project_3 proi3.cpp wincomponents.cpp wincomponents.h shell.cpp shell.h)
