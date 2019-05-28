@@ -1,6 +1,9 @@
-//
-// Created by napiad on 17.05.19.
-//
+/*
+ * Name: wincomponents.cpp
+ * Purpose: Custom library .cpp file for window components classes
+ * @author Adam Napieralski
+ * @version 0.1 28/05/2019
+ */
 
 #include "wincomponents.h"
 
@@ -302,7 +305,6 @@ void SignComp::showInfo() {
         std::cout << "\t'Rodzic':\t" << this->parent->id << std::endl;
     else
         std::cout << "\t'Rodzic':\t" << "brak - komponent nadrzedny" << std::endl;
-    std::cout << "\tPotomkowie:\t" << std::endl;
     std::cout << "\tPotomkowie:\t";
     if(this->children.empty())
         std::cout << "brak" << std::endl;

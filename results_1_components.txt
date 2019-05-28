@@ -1,0 +1,456 @@
+Zdefiniuj glowny - nadrzedny komponent.
+
+Wybierz typ komponentu:
+	0 - zawierajacy dany napis
+	1 - zawierajacy dany znak
+Podaj znak/tekst charakterystyczny dla dodawanego komponentu
+Podaj jego wymiary:
+	szerokosc: 	wysokosc: 
+MAIN MENU
+
+1 - Wypisz strukture komponentow
+2 - Przedstaw graficznie komponenty
+3 - Dodaj komponent
+4 - Usun komponent
+5 - Pokaz szczegoly komponentu
+0 - Wyjscie
+____________________
+____________________
+____________________
+____________________
+____________________
+____________________
+____________________
+____________________
+____________________
+____________________
+
+MAIN MENU
+
+1 - Wypisz strukture komponentow
+2 - Przedstaw graficznie komponenty
+3 - Dodaj komponent
+4 - Usun komponent
+5 - Pokaz szczegoly komponentu
+0 - Wyjscie
+Zdefiniuj komponent, ktorego potomkiem ma sie stac dodawany komponent.
+Podaj ID wybranego komponentu:
+Wybierz typ komponentu:
+	0 - zawierajacy dany napis
+	1 - zawierajacy dany znak
+Podaj znak/tekst charakterystyczny dla dodawanego komponentu
+Podaj polozenie nowego komponentu wzgledem 'rodzica'
+	x: 	y: Podaj wymiary nowego komponentu
+	szerokosc: 	wysokosc: 
+MAIN MENU
+
+1 - Wypisz strukture komponentow
+2 - Przedstaw graficznie komponenty
+3 - Dodaj komponent
+4 - Usun komponent
+5 - Pokaz szczegoly komponentu
+0 - Wyjscie
+____________________
+____________________
+____________________
+____________________
+____________________
+__________omomomomom
+__________omomomomom
+__________omomomomom
+__________omomomomom
+__________omomomomom
+
+MAIN MENU
+
+1 - Wypisz strukture komponentow
+2 - Przedstaw graficznie komponenty
+3 - Dodaj komponent
+4 - Usun komponent
+5 - Pokaz szczegoly komponentu
+0 - Wyjscie
+Zdefiniuj komponent, ktorego potomkiem ma sie stac dodawany komponent.
+Podaj ID wybranego komponentu:
+Wybierz typ komponentu:
+	0 - zawierajacy dany napis
+	1 - zawierajacy dany znak
+Podaj znak/tekst charakterystyczny dla dodawanego komponentu
+Podaj polozenie nowego komponentu wzgledem 'rodzica'
+	x: 	y: Podaj wymiary nowego komponentu
+	szerokosc: 	wysokosc: 
+MAIN MENU
+
+1 - Wypisz strukture komponentow
+2 - Przedstaw graficznie komponenty
+3 - Dodaj komponent
+4 - Usun komponent
+5 - Pokaz szczegoly komponentu
+0 - Wyjscie
+____________________
+____________________
+___///////////______
+___///////////______
+___///////////______
+___///////////omomom
+___///////////omomom
+___///////////omomom
+___///////////omomom
+__________omomomomom
+
+MAIN MENU
+
+1 - Wypisz strukture komponentow
+2 - Przedstaw graficznie komponenty
+3 - Dodaj komponent
+4 - Usun komponent
+5 - Pokaz szczegoly komponentu
+0 - Wyjscie
+Zdefiniuj komponent, ktorego potomkiem ma sie stac dodawany komponent.
+Podaj ID wybranego komponentu:
+Wybierz typ komponentu:
+	0 - zawierajacy dany napis
+	1 - zawierajacy dany znak
+Podaj znak/tekst charakterystyczny dla dodawanego komponentu
+Podaj polozenie nowego komponentu wzgledem 'rodzica'
+	x: 	y: Podaj wymiary nowego komponentu
+	szerokosc: 	wysokosc: 
+MAIN MENU
+
+1 - Wypisz strukture komponentow
+2 - Przedstaw graficznie komponenty
+3 - Dodaj komponent
+4 - Usun komponent
+5 - Pokaz szczegoly komponentu
+0 - Wyjscie
+________[][][][][][]
+________[][][][][][]
+___/////[][][][][][]
+___/////[][][][][][]
+___/////[][][][][][]
+___/////[][][][][][]
+___///////////omomom
+___///////////omomom
+___///////////omomom
+__________omomomomom
+
+MAIN MENU
+
+1 - Wypisz strukture komponentow
+2 - Przedstaw graficznie komponenty
+3 - Dodaj komponent
+4 - Usun komponent
+5 - Pokaz szczegoly komponentu
+0 - Wyjscie
+
+Struktura komponentów
+0
+	0.0
+	0.1
+	0.2
+
+
+MAIN MENU
+
+1 - Wypisz strukture komponentow
+2 - Przedstaw graficznie komponenty
+3 - Dodaj komponent
+4 - Usun komponent
+5 - Pokaz szczegoly komponentu
+0 - Wyjscie
+Zdefiniuj komponent, ktorego potomkiem ma sie stac dodawany komponent.
+Podaj ID wybranego komponentu:
+Wybierz typ komponentu:
+	0 - zawierajacy dany napis
+	1 - zawierajacy dany znak
+Podaj znak/tekst charakterystyczny dla dodawanego komponentu
+Podaj polozenie nowego komponentu wzgledem 'rodzica'
+	x: 	y: Podaj wymiary nowego komponentu
+	szerokosc: 	wysokosc: 
+MAIN MENU
+
+1 - Wypisz strukture komponentow
+2 - Przedstaw graficznie komponenty
+3 - Dodaj komponent
+4 - Usun komponent
+5 - Pokaz szczegoly komponentu
+0 - Wyjscie
+________[][][][][][]
+________[][][][][][]
+___/////[][][][][][]
+___/////[][][][][][]
+___/////[][][][][][]
+___/////[][][][][][]
+___///////////===mom
+___///////////===mom
+___///////////===mom
+__________omo====mom
+
+MAIN MENU
+
+1 - Wypisz strukture komponentow
+2 - Przedstaw graficznie komponenty
+3 - Dodaj komponent
+4 - Usun komponent
+5 - Pokaz szczegoly komponentu
+0 - Wyjscie
+Zdefiniuj komponent, ktorego potomkiem ma sie stac dodawany komponent.
+Podaj ID wybranego komponentu:
+Wybierz typ komponentu:
+	0 - zawierajacy dany napis
+	1 - zawierajacy dany znak
+Podaj znak/tekst charakterystyczny dla dodawanego komponentu
+Podaj polozenie nowego komponentu wzgledem 'rodzica'
+	x: 	y: Podaj wymiary nowego komponentu
+	szerokosc: 	wysokosc: 
+MAIN MENU
+
+1 - Wypisz strukture komponentow
+2 - Przedstaw graficznie komponenty
+3 - Dodaj komponent
+4 - Usun komponent
+5 - Pokaz szczegoly komponentu
+0 - Wyjscie
+________[][][][][][]
+________[][][][][][]
+___/////[][][][][][]
+___/////[][][][][][]
+___/////[][][][][][]
+___/////[][][][][][]
+___///////////**=mom
+___///////////**=mom
+___///////////===mom
+__________omo====mom
+
+MAIN MENU
+
+1 - Wypisz strukture komponentow
+2 - Przedstaw graficznie komponenty
+3 - Dodaj komponent
+4 - Usun komponent
+5 - Pokaz szczegoly komponentu
+0 - Wyjscie
+Zdefiniuj komponent, ktorego potomkiem ma sie stac dodawany komponent.
+Podaj ID wybranego komponentu:
+Wybierz typ komponentu:
+	0 - zawierajacy dany napis
+	1 - zawierajacy dany znak
+Podaj znak/tekst charakterystyczny dla dodawanego komponentu
+Podaj polozenie nowego komponentu wzgledem 'rodzica'
+	x: 	y: Podaj wymiary nowego komponentu
+	szerokosc: 	wysokosc: 
+MAIN MENU
+
+1 - Wypisz strukture komponentow
+2 - Przedstaw graficznie komponenty
+3 - Dodaj komponent
+4 - Usun komponent
+5 - Pokaz szczegoly komponentu
+0 - Wyjscie
+________[][][][][][]
+________[][][][][][]
+___/////[][][][][][]
+___//pro[][][][][][]
+___//pro[][][][][][]
+___//pro[][][][][][]
+___//proiproi/**=mom
+___//proiproi/**=mom
+___///////////===mom
+__________omo====mom
+
+MAIN MENU
+
+1 - Wypisz strukture komponentow
+2 - Przedstaw graficznie komponenty
+3 - Dodaj komponent
+4 - Usun komponent
+5 - Pokaz szczegoly komponentu
+0 - Wyjscie
+Zdefiniuj komponent, ktorego potomkiem ma sie stac dodawany komponent.
+Podaj ID wybranego komponentu:
+Wybierz typ komponentu:
+	0 - zawierajacy dany napis
+	1 - zawierajacy dany znak
+Podaj znak/tekst charakterystyczny dla dodawanego komponentu
+Podaj polozenie nowego komponentu wzgledem 'rodzica'
+	x: 	y: Podaj wymiary nowego komponentu
+	szerokosc: 	wysokosc: 
+MAIN MENU
+
+1 - Wypisz strukture komponentow
+2 - Przedstaw graficznie komponenty
+3 - Dodaj komponent
+4 - Usun komponent
+5 - Pokaz szczegoly komponentu
+0 - Wyjscie
+________[][][][][][]
+________[][]^^^^[][]
+___/////[][]^^^^[][]
+___//pro[][]^^^^[][]
+___//pro[][]^^^^[][]
+___//pro[][][][][][]
+___//proiproi/**=mom
+___//proiproi/**=mom
+___///////////===mom
+__________omo====mom
+
+MAIN MENU
+
+1 - Wypisz strukture komponentow
+2 - Przedstaw graficznie komponenty
+3 - Dodaj komponent
+4 - Usun komponent
+5 - Pokaz szczegoly komponentu
+0 - Wyjscie
+Zdefiniuj komponent, ktorego potomkiem ma sie stac dodawany komponent.
+Podaj ID wybranego komponentu:
+Wybierz typ komponentu:
+	0 - zawierajacy dany napis
+	1 - zawierajacy dany znak
+Podaj znak/tekst charakterystyczny dla dodawanego komponentu
+Podaj polozenie nowego komponentu wzgledem 'rodzica'
+	x: 	y: Podaj wymiary nowego komponentu
+	szerokosc: 	wysokosc: 
+MAIN MENU
+
+1 - Wypisz strukture komponentow
+2 - Przedstaw graficznie komponenty
+3 - Dodaj komponent
+4 - Usun komponent
+5 - Pokaz szczegoly komponentu
+0 - Wyjscie
+
+Struktura komponentów
+0
+	0.0
+		0.0.0
+			0.0.0.0
+	0.1
+		0.1.0
+	0.2
+		0.2.0
+			0.2.0.0
+
+
+MAIN MENU
+
+1 - Wypisz strukture komponentow
+2 - Przedstaw graficznie komponenty
+3 - Dodaj komponent
+4 - Usun komponent
+5 - Pokaz szczegoly komponentu
+0 - Wyjscie
+Zdefiniuj komponent, o ktorym chcesz uzyskac szczegolowe informacje
+Podaj ID wybranego komponentu:
+	ID:	0.2
+	Wypelnienie:	[]
+	Wymiary (szer x wys):	12 x 6
+	Polozenie wzgledem 'rodzica' (x, y):	(8, 0)
+	Polozenie globalne (x, y):	(8, 0)
+	'Rodzic':	0
+	Potomkowie:	
+		0.2.0
+
+
+MAIN MENU
+
+1 - Wypisz strukture komponentow
+2 - Przedstaw graficznie komponenty
+3 - Dodaj komponent
+4 - Usun komponent
+5 - Pokaz szczegoly komponentu
+0 - Wyjscie
+Zdefiniuj komponent, o ktorym chcesz uzyskac szczegolowe informacje
+Podaj ID wybranego komponentu:
+	ID:	0.2.0.0
+	Wypelnienie:	&
+	Wymiary (szer x wys):	2 x 2
+	Polozenie wzgledem 'rodzica' (x, y):	(0, 1)
+	Polozenie globalne (x, y):	(12, 13)
+	'Rodzic':	0.2.0
+	Potomkowie:	brak
+
+
+MAIN MENU
+
+1 - Wypisz strukture komponentow
+2 - Przedstaw graficznie komponenty
+3 - Dodaj komponent
+4 - Usun komponent
+5 - Pokaz szczegoly komponentu
+0 - Wyjscie
+Zdefiniuj komponent, który chcesz usunac.
+Podaj ID wybranego komponentu:
+Nie mozna usunac komponentu nadrzednego.
+
+MAIN MENU
+
+1 - Wypisz strukture komponentow
+2 - Przedstaw graficznie komponenty
+3 - Dodaj komponent
+4 - Usun komponent
+5 - Pokaz szczegoly komponentu
+0 - Wyjscie
+Zdefiniuj komponent, który chcesz usunac.
+Podaj ID wybranego komponentu:
+Usunieto komponent.
+
+MAIN MENU
+
+1 - Wypisz strukture komponentow
+2 - Przedstaw graficznie komponenty
+3 - Dodaj komponent
+4 - Usun komponent
+5 - Pokaz szczegoly komponentu
+0 - Wyjscie
+________[][][][][][]
+________[][]^^^^[][]
+___/////[][]&&^^[][]
+___//pro[][]&&^^[][]
+___//pro[][]^^^^[][]
+___//pro[][][][][][]
+___//proiproi/omomom
+___//proiproi/omomom
+___///////////omomom
+__________omomomomom
+
+MAIN MENU
+
+1 - Wypisz strukture komponentow
+2 - Przedstaw graficznie komponenty
+3 - Dodaj komponent
+4 - Usun komponent
+5 - Pokaz szczegoly komponentu
+0 - Wyjscie
+Zdefiniuj komponent, który chcesz usunac.
+Podaj ID wybranego komponentu:
+Usunieto komponent.
+
+MAIN MENU
+
+1 - Wypisz strukture komponentow
+2 - Przedstaw graficznie komponenty
+3 - Dodaj komponent
+4 - Usun komponent
+5 - Pokaz szczegoly komponentu
+0 - Wyjscie
+____________________
+____________________
+___///////////______
+___//proiproi/______
+___//proiproi/______
+___//proiproi/omomom
+___//proiproi/omomom
+___//proiproi/omomom
+___///////////omomom
+__________omomomomom
+
+MAIN MENU
+
+1 - Wypisz strukture komponentow
+2 - Przedstaw graficznie komponenty
+3 - Dodaj komponent
+4 - Usun komponent
+5 - Pokaz szczegoly komponentu
+0 - Wyjscie
+
+WYJSCIE

@@ -1,6 +1,10 @@
-//
-// Created by napiad on 17.05.19.
-//
+/*
+ * Name: wincomponents.h
+ * Purpose: Custom library headers file for window components classes
+ * @author Adam Napieralski
+ * @version 0.1 28/05/2019
+ */
+
 
 #ifndef PROI_PROJECT_3_WINCOMPONENTS_H
 #define PROI_PROJECT_3_WINCOMPONENTS_H
@@ -46,7 +50,6 @@ public:
 
     Component* findComponent(std::deque<int> id);
 
-    //friend Component* newComponent(int componentType);
     friend void deleteComponent(Component* comp);
 
 };
@@ -58,7 +61,6 @@ public:
     TitleComp();
     TitleComp(std::string title, int x, int y, int w, int h);
 
-    //char** getDisplayArray() override;
     void fillDisplayArray(char*** dispArr) override;
     void setCharacteristic(std::string characteristic) override;
     void showInfo() override;
@@ -72,7 +74,6 @@ public:
     SignComp();
     SignComp(char &sign, int x, int y, int w, int h);
 
-    //char** getDisplayArray() override;
     void fillDisplayArray(char*** dispArr) override;
     void setCharacteristic(std::string characteristic) override;
     void showInfo() override;

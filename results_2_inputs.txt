@@ -1,0 +1,199 @@
+Zdefiniuj glowny - nadrzedny komponent.
+
+Wybierz typ komponentu:
+	0 - zawierajacy dany napis
+	1 - zawierajacy dany znak
+Niepoprawne dane. Wprowadz ponownie.
+Niepoprawne dane. Wprowadz ponownie.
+Podaj znak/tekst charakterystyczny dla dodawanego komponentu
+Podaj jego wymiary:
+	szerokosc: Niepoprawne dane. Wprowadz ponownie.
+	szerokosc: Niepoprawne dane. Wprowadz ponownie.
+	szerokosc: 	wysokosc: Niepoprawne dane. Wprowadz ponownie.
+	wysokosc: 
+MAIN MENU
+
+1 - Wypisz strukture komponentow
+2 - Przedstaw graficznie komponenty
+3 - Dodaj komponent
+4 - Usun komponent
+5 - Pokaz szczegoly komponentu
+0 - Wyjscie
+
+Struktura komponentów
+0
+
+
+MAIN MENU
+
+1 - Wypisz strukture komponentow
+2 - Przedstaw graficznie komponenty
+3 - Dodaj komponent
+4 - Usun komponent
+5 - Pokaz szczegoly komponentu
+0 - Wyjscie
+____________________
+____________________
+____________________
+____________________
+____________________
+____________________
+____________________
+____________________
+____________________
+____________________
+
+MAIN MENU
+
+1 - Wypisz strukture komponentow
+2 - Przedstaw graficznie komponenty
+3 - Dodaj komponent
+4 - Usun komponent
+5 - Pokaz szczegoly komponentu
+0 - Wyjscie
+Zdefiniuj komponent, o ktorym chcesz uzyskac szczegolowe informacje
+Podaj ID wybranego komponentu:
+	ID:	0
+	Wypelnienie:	_
+	Wymiary (szer x wys):	20 x 10
+	Polozenie wzgledem 'rodzica' (x, y):	(0, 0)
+	Polozenie globalne (x, y):	(0, 0)
+	'Rodzic':	brak - komponent nadrzedny
+	Potomkowie:	brak
+
+
+MAIN MENU
+
+1 - Wypisz strukture komponentow
+2 - Przedstaw graficznie komponenty
+3 - Dodaj komponent
+4 - Usun komponent
+5 - Pokaz szczegoly komponentu
+0 - Wyjscie
+Zdefiniuj komponent, który chcesz usunac.
+Podaj ID wybranego komponentu:
+Niepoprawne dane. Wprowadz ID ponownie.
+Nie znaleziono komponentu o podanym ID.
+Usunieto komponent.
+
+MAIN MENU
+
+1 - Wypisz strukture komponentow
+2 - Przedstaw graficznie komponenty
+3 - Dodaj komponent
+4 - Usun komponent
+5 - Pokaz szczegoly komponentu
+0 - Wyjscie
+Zdefiniuj komponent, który chcesz usunac.
+Podaj ID wybranego komponentu:
+Nie mozna usunac komponentu nadrzednego.
+
+MAIN MENU
+
+1 - Wypisz strukture komponentow
+2 - Przedstaw graficznie komponenty
+3 - Dodaj komponent
+4 - Usun komponent
+5 - Pokaz szczegoly komponentu
+0 - Wyjscie
+Niepoprawne dane. Wprowadz ponownie.
+Zdefiniuj komponent, ktorego potomkiem ma sie stac dodawany komponent.
+Podaj ID wybranego komponentu:
+Wybierz typ komponentu:
+	0 - zawierajacy dany napis
+	1 - zawierajacy dany znak
+Podaj znak/tekst charakterystyczny dla dodawanego komponentu
+Podaj polozenie nowego komponentu wzgledem 'rodzica'
+	x: Niepoprawne dane. Wprowadz ponownie.
+	x: Niepoprawne dane. Wprowadz ponownie.
+	x: 	y: Podaj wymiary nowego komponentu
+	szerokosc: Niepoprawne dane. Wprowadz ponownie.
+	szerokosc: Niepoprawne dane. Wprowadz ponownie.
+	szerokosc: Niepoprawne dane. Wprowadz ponownie.
+	szerokosc: 	wysokosc: 
+MAIN MENU
+
+1 - Wypisz strukture komponentow
+2 - Przedstaw graficznie komponenty
+3 - Dodaj komponent
+4 - Usun komponent
+5 - Pokaz szczegoly komponentu
+0 - Wyjscie
+
+Struktura komponentów
+0
+	0.0
+
+
+MAIN MENU
+
+1 - Wypisz strukture komponentow
+2 - Przedstaw graficznie komponenty
+3 - Dodaj komponent
+4 - Usun komponent
+5 - Pokaz szczegoly komponentu
+0 - Wyjscie
+____________________
+____________________
+____________________
+____________________
+____________________
+__________//////////
+__________//////////
+__________//////////
+__________//////////
+__________//////////
+
+MAIN MENU
+
+1 - Wypisz strukture komponentow
+2 - Przedstaw graficznie komponenty
+3 - Dodaj komponent
+4 - Usun komponent
+5 - Pokaz szczegoly komponentu
+0 - Wyjscie
+Niepoprawne dane. Wprowadz ponownie.
+Niepoprawne dane. Wprowadz ponownie.
+Niepoprawne dane. Wprowadz ponownie.
+Niepoprawne dane. Wprowadz ponownie.
+Niepoprawne dane. Wprowadz ponownie.
+Zdefiniuj komponent, który chcesz usunac.
+Podaj ID wybranego komponentu:
+Nie mozna usunac komponentu nadrzednego.
+
+MAIN MENU
+
+1 - Wypisz strukture komponentow
+2 - Przedstaw graficznie komponenty
+3 - Dodaj komponent
+4 - Usun komponent
+5 - Pokaz szczegoly komponentu
+0 - Wyjscie
+Zdefiniuj komponent, który chcesz usunac.
+Podaj ID wybranego komponentu:
+Niepoprawne dane. Wprowadz ID ponownie.
+Usunieto komponent.
+
+MAIN MENU
+
+1 - Wypisz strukture komponentow
+2 - Przedstaw graficznie komponenty
+3 - Dodaj komponent
+4 - Usun komponent
+5 - Pokaz szczegoly komponentu
+0 - Wyjscie
+
+Struktura komponentów
+0
+
+
+MAIN MENU
+
+1 - Wypisz strukture komponentow
+2 - Przedstaw graficznie komponenty
+3 - Dodaj komponent
+4 - Usun komponent
+5 - Pokaz szczegoly komponentu
+0 - Wyjscie
+
+WYJSCIE

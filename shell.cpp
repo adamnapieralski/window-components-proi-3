@@ -1,6 +1,9 @@
-//
-// Created by napiad on 22.05.19.
-//
+/*
+ * Name: shell.h
+ * Purpose: Custom library header file for program UI shell handling
+ * @author Adam Napieralski
+ * @version 0.1 28/05/2019
+ */
 
 #include "shell.h"
 
