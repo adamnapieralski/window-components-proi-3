@@ -30,13 +30,11 @@ Component::~Component() {
     //if it is not root component
     if(this->parent){
         auto childErase = find(this->parent->children.begin(), this->parent->children.end(), this);
-        std::cout << "from parents vector\n";
         this->parent->children.erase(childErase);
     }
-    //delete all component children (recursively)
-    for(auto child : this->children){
-        std::cout << child->id << std::endl;
-        delete child;
+    //delete all component children (recursively) - backwards, so it wont delete children vector elements in a fly
+    for(auto child = this->children.rbegin(); child != this->children.rend(); ++child){
+        delete *child;
     }
 }
 
