@@ -148,13 +148,13 @@ void Shell::addComponent() {
     }
     cout << "Podaj wymiary nowego komponentu\n";
     int w, h;
-    while ((cout << "\tszerokosc: " && !(cin >> w)) || w < 0 || w > parent->w - x || cin.peek() != '\n')
+    while ((cout << "\tszerokosc: " && !(cin >> w)) || w <= 0 || w > parent->w - x || cin.peek() != '\n')
     {
         cout << "Niepoprawne dane. Wprowadz ponownie." << endl;
         cin.clear();
         cin.ignore(INT8_MAX, '\n');
     }
-    while ((cout << "\twysokosc: " && !(cin >> h)) || h < 0 || h > parent->h - y || cin.peek() != '\n')
+    while ((cout << "\twysokosc: " && !(cin >> h)) || h <= 0 || h > parent->h - y || cin.peek() != '\n')
     {
         cout << "Niepoprawne dane. Wprowadz ponownie." << endl;
         cin.clear();
@@ -249,13 +249,13 @@ void Shell::setRootComponent() {
 
     cout << "Podaj jego wymiary:\n";
     int w, h;
-    while ((cout << "\tszerokosc: " && !(cin >> w)) || w < 0 || cin.peek() != '\n')
+    while ((cout << "\tszerokosc: " && !(cin >> w)) || w <= 0 || cin.peek() != '\n')
     {
         cout << "Niepoprawne dane. Wprowadz ponownie." << endl;
         cin.clear();
         cin.ignore(INT8_MAX, '\n');
     }
-    while ((cout << "\twysokosc: " && !(cin >> h)) || h < 0 || cin.peek() != '\n')
+    while ((cout << "\twysokosc: " && !(cin >> h)) || h <= 0 || cin.peek() != '\n')
     {
         cout << "Niepoprawne dane. Wprowadz ponownie." << endl;
         cin.clear();
