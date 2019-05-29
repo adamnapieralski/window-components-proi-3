@@ -13,14 +13,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7ef242c5-3973-4372-87ac-f9f88ce8d5ba" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/proi3" beforeDir="false" afterPath="$PROJECT_DIR$/proi3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/proi3.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/proi3.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shell.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/shell.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shell.h" beforeDir="false" afterPath="$PROJECT_DIR$/shell.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utest1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utest_comp_prepare.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wincomponents.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/wincomponents.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wincomponents.h" beforeDir="false" afterPath="$PROJECT_DIR$/wincomponents.h" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -67,11 +59,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wincomponents.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="75" selection-start-line="75" selection-end-line="75" />
+            <state relative-caret-position="-281">
+              <caret line="37" column="21" lean-forward="true" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
               <folding>
                 <element signature="e#120#139#0" expanded="true" />
               </folding>
@@ -82,13 +74,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wincomponents.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4692">
-              <caret selection-end-line="6" />
+            <state relative-caret-position="131">
+              <caret line="328" column="5" selection-start-line="328" selection-start-column="5" selection-end-line="328" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/shell.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
@@ -131,9 +123,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="4">
     <option name="y" value="25" />
-    <option name="width" value="1366" />
+    <option name="width" value="836" />
     <option name="height" value="743" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -195,7 +187,7 @@
       <workItem from="1558686366942" duration="9746000" />
       <workItem from="1558949666147" duration="6764000" />
       <workItem from="1558959865663" duration="10734000" />
-      <workItem from="1559069467548" duration="5033000" />
+      <workItem from="1559069467548" duration="10644000" />
     </task>
     <task id="LOCAL-00001" summary="Beginnigs of components classes">
       <created>1558104756658</created>
@@ -351,24 +343,31 @@
       <option name="project" value="LOCAL" />
       <updated>1559073649274</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Raport and test files">
+      <created>1559078194718</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1559078194718</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103714000" />
+    <option name="totallyTimeSpent" value="109325000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1366" height="743" extended-state="6" />
+    <frame x="0" y="25" width="696" height="743" extended-state="4" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.19033232" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.08103976" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.32903227" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.32903227" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="3" />
-      <window_info active="true" anchor="bottom" id="Messages" order="4" visible="true" weight="0.28870967" />
+      <window_info anchor="bottom" id="Messages" order="4" visible="true" weight="0.28870967" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" />
       <window_info anchor="bottom" id="Run" order="7" weight="0.45" />
@@ -449,7 +448,8 @@
     <MESSAGE value="unit tests" />
     <MESSAGE value="Resolved deleting children elements in destructor" />
     <MESSAGE value="Unit test - components prepare" />
-    <option name="LAST_COMMIT_MESSAGE" value="Unit test - components prepare" />
+    <MESSAGE value="Raport and test files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Raport and test files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -501,23 +501,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shell.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
-          <folding>
-            <element signature="e#104#123#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wincomponents.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4692">
-          <caret selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/shell.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -525,12 +508,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/wincomponents.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="328" column="5" selection-start-line="328" selection-start-column="5" selection-end-line="328" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wincomponents.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="75" selection-start-line="75" selection-end-line="75" />
+        <state relative-caret-position="-281">
+          <caret line="37" column="21" lean-forward="true" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
           <folding>
             <element signature="e#120#139#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shell.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+          <folding>
+            <element signature="e#104#123#0" expanded="true" />
           </folding>
         </state>
       </provider>
