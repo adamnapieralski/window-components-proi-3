@@ -5,6 +5,7 @@ Wybierz typ komponentu:
 	1 - zawierajacy dany znak
 Niepoprawne dane. Wprowadz ponownie.
 Niepoprawne dane. Wprowadz ponownie.
+Niepoprawne dane. Wprowadz ponownie.
 Podaj znak/tekst charakterystyczny dla dodawanego komponentu
 Podaj jego wymiary:
 	szerokosc: Niepoprawne dane. Wprowadz ponownie.
@@ -74,7 +75,6 @@ Zdefiniuj komponent, który chcesz usunac.
 Podaj ID wybranego komponentu:
 Niepoprawne dane. Wprowadz ID ponownie.
 Nie znaleziono komponentu o podanym ID.
-Usunieto komponent.
 
 MAIN MENU
 

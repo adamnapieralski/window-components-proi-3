@@ -1,3 +1,4 @@
+Komponent nadrzędny
 0asd
 cv s s
 0
@@ -27,6 +28,7 @@ niepoprawne polozenie
 10
 5
 niepoprawne wymiary
+0
 -20
 20
 10
@@ -45,4 +47,5 @@ Usuwanie komponentu
 0.0
 1
 0
+
 

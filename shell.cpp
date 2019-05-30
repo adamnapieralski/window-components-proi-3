@@ -172,7 +172,7 @@ void Shell::deleteComponent() {
     if(delComp == this->rootComponent){
         cout << "Nie mozna usunac komponentu nadrzednego.\n";
     }
-    else{
+    else if(delComp){
         delete delComp;
         cout << "Usunieto komponent.\n";
     }
